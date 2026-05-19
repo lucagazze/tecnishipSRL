@@ -1,7 +1,7 @@
 (function () {
   'use strict';
 
-  var cur = (window.location.pathname.split('/').pop() || 'index.html');
+  var cur = (window.location.pathname.split('/').pop() || '');
 
   function inject(id, html) {
     var el = document.getElementById(id);
@@ -20,29 +20,29 @@
 </div>
 <header class="sticky top-0 z-50 bg-surface-container-lowest shadow-sm py-4">
   <div class="container mx-auto px-4 flex justify-between items-center">
-    <a class="flex-shrink-0" href="index.html">
+    <a class="flex-shrink-0" href="/">
       <img src="logo.webp" alt="MB Naval" class="h-12 w-auto object-contain" />
     </a>
     <nav class="hidden lg:flex items-center space-x-6">
-      <a class="nav-link" href="index.html" data-en="Home">Inicio</a>
-      <a class="nav-link" href="nosotros.html" data-en="About Us">Quiénes Somos</a>
+      <a class="nav-link" href="/" data-en="Home">Inicio</a>
+      <a class="nav-link" href="nosotros" data-en="About Us">Quiénes Somos</a>
       <div class="relative group">
         <button class="nav-link flex items-center" style="background:none;border:none;cursor:pointer"><span data-en="Services">Servicios</span> <i class="fas fa-chevron-down ml-1 text-xs"></i></button>
         <div class="absolute left-0 mt-2 w-52 bg-surface-container-lowest border border-outline-variant rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
-          <a class="block px-4 py-2 text-sm text-on-surface hover:bg-surface-container-low" href="mantenimiento.html" data-en="Naval Maintenance">Mantenimiento Naval</a>
-          <a class="block px-4 py-2 text-sm text-on-surface hover:bg-surface-container-low" href="reparacion.html" data-en="Equipment Repair">Reparación de Equipos</a>
-          <a class="block px-4 py-2 text-sm text-on-surface hover:bg-surface-container-low" href="repuestos.html" data-en="Spare Parts">Venta de Repuestos</a>
+          <a class="block px-4 py-2 text-sm text-on-surface hover:bg-surface-container-low" href="mantenimiento" data-en="Naval Maintenance">Mantenimiento Naval</a>
+          <a class="block px-4 py-2 text-sm text-on-surface hover:bg-surface-container-low" href="reparacion" data-en="Equipment Repair">Reparación de Equipos</a>
+          <a class="block px-4 py-2 text-sm text-on-surface hover:bg-surface-container-low" href="repuestos" data-en="Spare Parts">Venta de Repuestos</a>
         </div>
       </div>
       <div class="relative group">
         <button class="nav-link flex items-center" style="background:none;border:none;cursor:pointer"><span data-en="Fleet">Flota</span> <i class="fas fa-chevron-down ml-1 text-xs"></i></button>
         <div class="absolute left-0 mt-2 w-52 bg-surface-container-lowest border border-outline-variant rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
-          <a class="block px-4 py-2 text-sm text-on-surface hover:bg-surface-container-low" href="remolcadores.html" data-en="Tugboats">Remolcadores</a>
-          <a class="block px-4 py-2 text-sm text-on-surface hover:bg-surface-container-low" href="petroleros.html" data-en="Oil Tankers">Barcos Petroleros</a>
-          <a class="block px-4 py-2 text-sm text-on-surface hover:bg-surface-container-low" href="graneleros.html" data-en="Bulk Carriers">Graneleros / Cerealeros</a>
+          <a class="block px-4 py-2 text-sm text-on-surface hover:bg-surface-container-low" href="remolcadores" data-en="Tugboats">Remolcadores</a>
+          <a class="block px-4 py-2 text-sm text-on-surface hover:bg-surface-container-low" href="petroleros" data-en="Oil Tankers">Barcos Petroleros</a>
+          <a class="block px-4 py-2 text-sm text-on-surface hover:bg-surface-container-low" href="graneleros" data-en="Bulk Carriers">Graneleros / Cerealeros</a>
         </div>
       </div>
-      <a class="nav-link" href="contacto.html" data-en="Contact">Contacto</a>
+      <a class="nav-link" href="contacto" data-en="Contact">Contacto</a>
     </nav>
     <div class="flex items-center gap-3">
       <button onclick="switchLang()" class="lang-toggle flex items-center rounded-full overflow-hidden cursor-pointer select-none" style="border:1.5px solid #c2c7d0;background:#e5e8ee">
@@ -53,7 +53,7 @@
           <img src="https://flagcdn.com/w20/us.png" width="15" style="display:inline;vertical-align:middle;border-radius:2px"> EN
         </span>
       </button>
-      <a class="btn-cotizar hidden lg:inline-flex" href="contacto.html"><i class="fas fa-file-alt mr-2 text-base"></i> <span data-en="QUOTE">COTIZACIÓN</span></a>
+      <a class="btn-cotizar hidden lg:inline-flex" href="contacto"><i class="fas fa-file-alt mr-2 text-base"></i> <span data-en="QUOTE">COTIZACIÓN</span></a>
       <button class="lg:hidden text-on-surface-variant hover:text-primary" onclick="openMobileMenu()">
         <i class="fas fa-bars text-2xl"></i>
       </button>
@@ -64,22 +64,22 @@
   <div class="absolute inset-0 bg-black/50" onclick="closeMobileMenu()"></div>
   <div class="absolute right-0 top-0 h-full w-[300px] bg-white shadow-2xl flex flex-col">
     <div class="flex justify-between items-center px-6 py-5 border-b border-outline-variant">
-      <a href="index.html" class="flex-shrink-0">
+      <a href="/" class="flex-shrink-0">
         <img src="logo.webp" alt="MB Naval" class="h-8 w-auto object-contain" />
       </a>
       <button onclick="closeMobileMenu()" class="text-on-surface-variant hover:text-primary text-xl w-8 h-8 flex items-center justify-center"><i class="fas fa-times"></i></button>
     </div>
     <nav class="flex-1 overflow-y-auto">
-      <a href="index.html" onclick="closeMobileMenu()" class="flex justify-between items-center px-6 py-4 text-on-surface font-medium border-b border-outline-variant hover:text-primary transition-colors" data-en="Home">Inicio</a>
-      <a href="index.html#nosotros" onclick="closeMobileMenu()" class="flex justify-between items-center px-6 py-4 text-on-surface font-medium border-b border-outline-variant hover:text-primary transition-colors" data-en="About Us">Quiénes Somos</a>
+      <a href="/" onclick="closeMobileMenu()" class="flex justify-between items-center px-6 py-4 text-on-surface font-medium border-b border-outline-variant hover:text-primary transition-colors" data-en="Home">Inicio</a>
+      <a href="/#nosotros" onclick="closeMobileMenu()" class="flex justify-between items-center px-6 py-4 text-on-surface font-medium border-b border-outline-variant hover:text-primary transition-colors" data-en="About Us">Quiénes Somos</a>
       <div class="border-b border-outline-variant">
         <button onclick="toggleMobileSubmenu('mobileServ','mobileServIcon')" class="flex justify-between items-center w-full px-6 py-4 text-on-surface font-medium text-left">
           <span data-en="Services">Servicios</span> <span id="mobileServIcon" class="text-xl font-light leading-none">+</span>
         </button>
         <div id="mobileServ" class="hidden bg-surface-container-low">
-          <a href="mantenimiento.html" class="flex items-center px-8 py-3 text-sm text-on-surface-variant hover:text-primary border-t border-outline-variant" data-en="Naval Maintenance">Mantenimiento Naval</a>
-          <a href="reparacion.html" class="flex items-center px-8 py-3 text-sm text-on-surface-variant hover:text-primary border-t border-outline-variant" data-en="Equipment Repair">Reparación de Equipos</a>
-          <a href="repuestos.html" class="flex items-center px-8 py-3 text-sm text-on-surface-variant hover:text-primary border-t border-outline-variant" data-en="Spare Parts">Venta de Repuestos</a>
+          <a href="mantenimiento" class="flex items-center px-8 py-3 text-sm text-on-surface-variant hover:text-primary border-t border-outline-variant" data-en="Naval Maintenance">Mantenimiento Naval</a>
+          <a href="reparacion" class="flex items-center px-8 py-3 text-sm text-on-surface-variant hover:text-primary border-t border-outline-variant" data-en="Equipment Repair">Reparación de Equipos</a>
+          <a href="repuestos" class="flex items-center px-8 py-3 text-sm text-on-surface-variant hover:text-primary border-t border-outline-variant" data-en="Spare Parts">Venta de Repuestos</a>
         </div>
       </div>
       <div class="border-b border-outline-variant">
@@ -87,24 +87,24 @@
           <span data-en="Fleet">Flota</span> <span id="mobileFlotaIcon" class="text-xl font-light leading-none">+</span>
         </button>
         <div id="mobileFlota" class="hidden bg-surface-container-low">
-          <a href="remolcadores.html" class="flex items-center px-8 py-3 text-sm text-on-surface-variant hover:text-primary border-t border-outline-variant" data-en="Tugboats">Remolcadores</a>
-          <a href="petroleros.html" class="flex items-center px-8 py-3 text-sm text-on-surface-variant hover:text-primary border-t border-outline-variant" data-en="Oil Tankers">Barcos Petroleros</a>
-          <a href="graneleros.html" class="flex items-center px-8 py-3 text-sm text-on-surface-variant hover:text-primary border-t border-outline-variant" data-en="Bulk Carriers">Graneleros / Cerealeros</a>
+          <a href="remolcadores" class="flex items-center px-8 py-3 text-sm text-on-surface-variant hover:text-primary border-t border-outline-variant" data-en="Tugboats">Remolcadores</a>
+          <a href="petroleros" class="flex items-center px-8 py-3 text-sm text-on-surface-variant hover:text-primary border-t border-outline-variant" data-en="Oil Tankers">Barcos Petroleros</a>
+          <a href="graneleros" class="flex items-center px-8 py-3 text-sm text-on-surface-variant hover:text-primary border-t border-outline-variant" data-en="Bulk Carriers">Graneleros / Cerealeros</a>
         </div>
       </div>
-      <a href="contacto.html" class="flex justify-between items-center px-6 py-4 text-on-surface font-medium border-b border-outline-variant hover:text-primary transition-colors" data-en="Contact">Contacto</a>
+      <a href="contacto" class="flex justify-between items-center px-6 py-4 text-on-surface font-medium border-b border-outline-variant hover:text-primary transition-colors" data-en="Contact">Contacto</a>
     </nav>
     <div class="px-6 py-6 border-t border-outline-variant">
-      <a href="contacto.html" onclick="closeMobileMenu()" class="btn-cotizar w-full justify-center"><i class="fas fa-file-alt mr-2"></i> <span data-en="QUOTE">COTIZACIÓN</span></a>
+      <a href="contacto" onclick="closeMobileMenu()" class="btn-cotizar w-full justify-center"><i class="fas fa-file-alt mr-2"></i> <span data-en="QUOTE">COTIZACIÓN</span></a>
     </div>
   </div>
 </div>`;
 
   var footerLinks = [
-    { href: 'nosotros.html', label: '¿Quiénes Somos?',      en: 'About Us',          page: 'index.html' },
-    { href: 'mantenimiento.html',  label: 'Mantenimiento Naval',   en: 'Naval Maintenance', page: 'mantenimiento.html' },
-    { href: 'reparacion.html',     label: 'Reparación de Equipos', en: 'Equipment Repair',  page: 'reparacion.html' },
-    { href: 'repuestos.html',      label: 'Venta de Repuestos',    en: 'Spare Parts',       page: 'repuestos.html' },
+    { href: 'nosotros', label: '¿Quiénes Somos?',      en: 'About Us',          page: '' },
+    { href: 'mantenimiento.html',  label: 'Mantenimiento Naval',   en: 'Naval Maintenance', page: 'mantenimiento' },
+    { href: 'reparacion.html',     label: 'Reparación de Equipos', en: 'Equipment Repair',  page: 'reparacion' },
+    { href: 'repuestos.html',      label: 'Venta de Repuestos',    en: 'Spare Parts',       page: 'repuestos' },
     { href: 'index.html#flota',    label: 'Flota que Atendemos',   en: 'Fleet We Serve',    page: '' },
     { href: '#contacto',           label: 'Contacto',              en: 'Contact',           page: '' },
   ];
@@ -120,7 +120,7 @@
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
       <div class="space-y-4">
         <div class="mb-5">
-          <a href="index.html"><img src="logo.webp" alt="MB Naval" style="height:52px;width:auto;object-fit:contain" /></a>
+          <a href="/"><img src="logo.webp" alt="MB Naval" style="height:52px;width:auto;object-fit:contain" /></a>
         </div>
         <p class="text-xs text-on-surface-variant leading-relaxed pr-4" data-en="Comprehensive maintenance, repair and spare parts service for tugboats, oil tankers and bulk carriers in Argentina.">Servicio integral de mantenimiento, reparación y venta de repuestos navales para barcos remolcadores, petroleros y cerealeros en Argentina.</p>
         <p class="text-xs font-medium text-primary" data-en="Paraná and Paraguay Waterways — Argentina">Vías navegables del Paraná y Paraguay — Argentina</p>
