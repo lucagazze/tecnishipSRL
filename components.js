@@ -116,7 +116,7 @@
   });
 
   var footer = `<footer class="bg-white border-t border-outline-variant">
-  <div class="container mx-auto px-4 max-w-6xl py-16">
+  <div class="container mx-auto px-6 lg:px-12 py-16">
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
       <div class="space-y-4">
         <div class="mb-5">
@@ -153,7 +153,7 @@
     </div>
   </div>
   <div class="border-t border-outline-variant py-4">
-    <div class="container mx-auto px-4 max-w-6xl flex justify-between items-center text-[10px] text-on-surface-variant">
+    <div class="container mx-auto px-6 lg:px-12 flex justify-between items-center text-[10px] text-on-surface-variant">
       <div><p>2026 - <strong>MB NAVAL</strong></p><p data-en="Naval Maintenance Service · Argentina.">Servicio de Mantenimiento Naval · Argentina.</p></div>
       <a href="https://algoritmiadesarrollos.com.ar/" target="_blank" class="hover:opacity-70 transition-opacity text-on-surface" style="text-decoration:none" data-en="Designed by Algoritmia">Diseñado por Algoritmia</a>
     </div>
