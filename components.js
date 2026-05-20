@@ -27,11 +27,11 @@
       <a class="nav-link" href="/" data-en="Home">Inicio</a>
       <a class="nav-link" href="nosotros" data-en="About Us">Quiénes Somos</a>
       <div class="relative group">
-        <button class="nav-link flex items-center" style="background:none;border:none;cursor:pointer"><span data-en="Services">Servicios</span> <i class="fas fa-chevron-down ml-1 text-xs"></i></button>
+        <a class="nav-link flex items-center" href="servicios"><span data-en="Services">Servicios</span> <i class="fas fa-chevron-down ml-1 text-xs"></i></a>
         <div class="absolute left-0 mt-2 w-52 bg-surface-container-lowest border border-outline-variant rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+          <a class="block px-4 py-2 text-sm font-semibold text-signal-red hover:bg-surface-container-low border-b border-outline-variant" href="repuestos" data-en="Spare Parts">Venta de Repuestos</a>
           <a class="block px-4 py-2 text-sm text-on-surface hover:bg-surface-container-low" href="mantenimiento" data-en="Naval Maintenance">Mantenimiento Naval</a>
           <a class="block px-4 py-2 text-sm text-on-surface hover:bg-surface-container-low" href="reparacion" data-en="Equipment Repair">Reparación de Equipos</a>
-          <a class="block px-4 py-2 text-sm text-on-surface hover:bg-surface-container-low" href="repuestos" data-en="Spare Parts">Venta de Repuestos</a>
         </div>
       </div>
       <div class="relative group">
