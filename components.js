@@ -42,6 +42,7 @@
           <a class="block px-4 py-2 text-sm text-on-surface hover:bg-surface-container-low" href="graneleros" data-en="Bulk Carriers">Graneleros / Cerealeros</a>
         </div>
       </div>
+      <a class="nav-link" href="calidad" data-en="Quality">Calidad</a>
       <a class="nav-link" href="contacto" data-en="Contact">Contacto</a>
     </nav>
     <div class="flex items-center gap-3">
@@ -92,6 +93,7 @@
           <a href="graneleros" class="flex items-center px-8 py-3 text-sm text-on-surface-variant hover:text-primary border-t border-outline-variant" data-en="Bulk Carriers">Graneleros / Cerealeros</a>
         </div>
       </div>
+      <a href="calidad" onclick="closeMobileMenu()" class="flex justify-between items-center px-6 py-4 text-on-surface font-medium border-b border-outline-variant hover:text-primary transition-colors" data-en="Quality">Calidad</a>
       <a href="contacto" class="flex justify-between items-center px-6 py-4 text-on-surface font-medium border-b border-outline-variant hover:text-primary transition-colors" data-en="Contact">Contacto</a>
     </nav>
     <div class="px-6 py-6 border-t border-outline-variant">
