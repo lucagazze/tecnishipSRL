@@ -16,7 +16,7 @@
   var navbar = `<!-- TopBar -->
 <div class="bg-surface-container-low py-1 text-right px-4 text-xs text-on-surface-variant">
   <span class="mr-3"><i class="fas fa-phone mr-1"></i> +54 9 341 555 1826</span>
-  <a class="hover:text-primary hidden lg:inline" href="https://wa.me/5493415551826" target="_blank"><i class="fab fa-whatsapp mr-1"></i> WhatsApp</a>
+  <span class="hidden lg:inline"><i class="fas fa-map-marker-alt mr-1"></i> Alvear, Santa Fe, Argentina</span>
 </div>
 <header class="sticky top-0 z-50 bg-surface-container-lowest shadow-sm py-4">
   <div class="container mx-auto px-4 flex justify-between items-center">

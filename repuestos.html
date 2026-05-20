@@ -5,6 +5,7 @@
 <link rel="icon" type="image/jpeg" href="favicon.jpg"/>
 <link rel="shortcut icon" href="favicon.jpg"/>
 <link rel="apple-touch-icon" href="favicon.jpg"/>
+<link rel="preload" as="image" href="Repuestos.webp"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Repuestos Navales — MB Naval</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
@@ -68,7 +69,7 @@
 <!-- Hero -->
 <section class="relative h-[350px] md:h-[420px] flex items-center justify-center text-center">
   <div class="absolute inset-0 z-0">
-    <img alt="Repuestos navales" class="w-full h-full object-cover" src="Repuestos.webp"/>
+    <img alt="Repuestos navales" class="w-full h-full object-cover" src="Repuestos.webp" fetchpriority="high" loading="eager"/>
     <div class="absolute inset-0 hero-overlay"></div>
   </div>
   <div class="relative z-10 container mx-auto px-4">

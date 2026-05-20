@@ -5,6 +5,7 @@
 <link rel="icon" type="image/jpeg" href="favicon.jpg"/>
 <link rel="shortcut icon" href="favicon.jpg"/>
 <link rel="apple-touch-icon" href="favicon.jpg"/>
+<link rel="preload" as="image" href="quienessomos.webp"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>MB Naval — Quiénes Somos | Empresa Naval Argentina</title>
 <meta name="description" content="Conocé a MB Naval: más de 15 años brindando soluciones técnicas navales en Argentina. Mantenimiento, reparación y repuestos para la industria naval fluvial."/>
@@ -73,7 +74,7 @@ body { font-family: 'Inter', sans-serif; color: #181c20; }
 <!-- Hero -->
 <section class="relative h-[320px] md:h-[400px] flex items-center justify-center text-center">
   <div class="absolute inset-0 z-0">
-    <img src="quienessomos.webp" alt="MB Naval — Quiénes Somos" class="w-full h-full object-cover object-center" />
+    <img src="quienessomos.webp" alt="MB Naval — Quiénes Somos" class="w-full h-full object-cover object-center" fetchpriority="high" loading="eager"/>
     <div class="absolute inset-0" style="background:linear-gradient(to bottom, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.6) 55%, rgba(0,0,0,0.3) 100%)"></div>
   </div>
   <div class="relative z-10 container mx-auto px-4">

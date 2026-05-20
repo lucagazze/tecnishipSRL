@@ -5,6 +5,7 @@
 <link rel="icon" type="image/jpeg" href="favicon.jpg"/>
 <link rel="shortcut icon" href="favicon.jpg"/>
 <link rel="apple-touch-icon" href="favicon.jpg"/>
+<link rel="preload" as="image" href="barcoamarrado.webp"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>MB Naval — Contacto | Mantenimiento y Reparación Naval Argentina</title>
 <meta name="description" content="Contactá a MB Naval para presupuestos de mantenimiento, reparación y repuestos navales para tu flota en Argentina. Respondemos rápido, atención 24/7 para emergencias."/>
@@ -74,7 +75,7 @@ body { font-family: 'Inter', sans-serif; color: #181c20; }
 <!-- Hero -->
 <section class="relative h-[280px] md:h-[340px] flex items-center justify-center text-center">
   <div class="absolute inset-0 z-0">
-    <img src="barcoamarrado.webp" alt="MB Naval" class="w-full h-full object-cover object-center" />
+    <img src="barcoamarrado.webp" alt="MB Naval" class="w-full h-full object-cover object-center" fetchpriority="high" loading="eager"/>
     <div class="absolute inset-0" style="background:rgba(0,20,40,0.55)"></div>
   </div>
   <div class="relative z-10 container mx-auto px-4">
