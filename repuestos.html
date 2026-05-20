@@ -78,7 +78,7 @@
     <p class="text-on-primary text-lg font-light opacity-80" data-en="Permanent stock · OEM &amp; equivalent parts · Immediate delivery">Stock permanente · Originales y equivalentes · Entrega inmediata</p>
   </div>
   <!-- Wave Divider -->
-  <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none z-[3]">
+  <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none z-[3] hidden md:block">
     <svg class="relative block w-full h-[40px] md:h-[60px] lg:h-[80px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200" preserveAspectRatio="none">
       <path fill="#ffffff" d="M0,80 C400,80 1000,200 1440,160 L1440,200 L0,200 Z"></path>
     </svg>
@@ -126,14 +126,14 @@
     <h2 class="text-2xl font-bold text-primary mb-3" data-en="Parts categories">Categorías de repuestos</h2>
     <p class="text-on-surface-variant mb-12 max-w-xl mx-auto">Stock disponible en las principales categorías para la flota fluvial y marítima argentina.</p>
     <div class="grid grid-cols-2 md:grid-cols-4 gap-6 gap-y-10">
-      <div class="flex flex-col items-center"><i class="fas fa-cogs text-4xl text-primary mb-4 opacity-70"></i><h3 class="text-[11px] font-bold text-on-surface uppercase text-center">REPUESTOS<br/>DE MOTOR</h3></div>
-      <div class="flex flex-col items-center"><i class="fas fa-filter text-4xl text-primary mb-4 opacity-70"></i><h3 class="text-[11px] font-bold text-on-surface uppercase text-center">FILTROS<br/>Y ACEITES</h3></div>
-      <div class="flex flex-col items-center"><i class="fas fa-tint text-4xl text-primary mb-4 opacity-70"></i><h3 class="text-[11px] font-bold text-on-surface uppercase text-center">SISTEMA<br/>HIDRÁULICO</h3></div>
-      <div class="flex flex-col items-center"><i class="fas fa-bolt text-4xl text-primary mb-4 opacity-70"></i><h3 class="text-[11px] font-bold text-on-surface uppercase text-center">COMPONENTES<br/>ELÉCTRICOS</h3></div>
-      <div class="flex flex-col items-center"><i class="fas fa-circle-notch text-4xl text-primary mb-4 opacity-70"></i><h3 class="text-[11px] font-bold text-on-surface uppercase text-center">CORREAS<br/>Y JUNTAS</h3></div>
-      <div class="flex flex-col items-center"><i class="fas fa-water text-4xl text-primary mb-4 opacity-70"></i><h3 class="text-[11px] font-bold text-on-surface uppercase text-center">BOMBAS<br/>Y VÁLVULAS</h3></div>
-      <div class="flex flex-col items-center"><i class="fas fa-ship text-4xl text-primary mb-4 opacity-70"></i><h3 class="text-[11px] font-bold text-on-surface uppercase text-center">EQUIPOS<br/>DE CUBIERTA</h3></div>
-      <div class="flex flex-col items-center"><i class="fas fa-globe text-4xl text-primary mb-4 opacity-70"></i><h3 class="text-[11px] font-bold text-on-surface uppercase text-center">IMPORTACIÓN<br/>BAJO PEDIDO</h3></div>
+      <div class="flex flex-col items-center"><i class="fas fa-cogs text-4xl text-primary mb-4 opacity-70"></i><h3 class="text-[11px] font-bold text-on-surface uppercase text-center" data-en="ENGINE PARTS">REPUESTOS<br/>DE MOTOR</h3></div>
+      <div class="flex flex-col items-center"><i class="fas fa-filter text-4xl text-primary mb-4 opacity-70"></i><h3 class="text-[11px] font-bold text-on-surface uppercase text-center" data-en="FILTERS &amp; OILS">FILTROS<br/>Y ACEITES</h3></div>
+      <div class="flex flex-col items-center"><i class="fas fa-tint text-4xl text-primary mb-4 opacity-70"></i><h3 class="text-[11px] font-bold text-on-surface uppercase text-center" data-en="HYDRAULIC SYSTEM">SISTEMA<br/>HIDRÁULICO</h3></div>
+      <div class="flex flex-col items-center"><i class="fas fa-bolt text-4xl text-primary mb-4 opacity-70"></i><h3 class="text-[11px] font-bold text-on-surface uppercase text-center" data-en="ELECTRICAL COMPONENTS">COMPONENTES<br/>ELÉCTRICOS</h3></div>
+      <div class="flex flex-col items-center"><i class="fas fa-circle-notch text-4xl text-primary mb-4 opacity-70"></i><h3 class="text-[11px] font-bold text-on-surface uppercase text-center" data-en="BELTS &amp; GASKETS">CORREAS<br/>Y JUNTAS</h3></div>
+      <div class="flex flex-col items-center"><i class="fas fa-water text-4xl text-primary mb-4 opacity-70"></i><h3 class="text-[11px] font-bold text-on-surface uppercase text-center" data-en="PUMPS &amp; VALVES">BOMBAS<br/>Y VÁLVULAS</h3></div>
+      <div class="flex flex-col items-center"><i class="fas fa-ship text-4xl text-primary mb-4 opacity-70"></i><h3 class="text-[11px] font-bold text-on-surface uppercase text-center" data-en="DECK EQUIPMENT">EQUIPOS<br/>DE CUBIERTA</h3></div>
+      <div class="flex flex-col items-center"><i class="fas fa-globe text-4xl text-primary mb-4 opacity-70"></i><h3 class="text-[11px] font-bold text-on-surface uppercase text-center" data-en="IMPORT ON REQUEST">IMPORTACIÓN<br/>BAJO PEDIDO</h3></div>
     </div>
   </div>
 </section>
@@ -203,12 +203,12 @@
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
       <a href="mantenimiento" class="flex items-center gap-4 p-5 bg-surface-container-low rounded-xl hover:bg-surface-container transition border border-outline-variant">
         <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center flex-shrink-0"><i class="fas fa-wrench text-white text-sm"></i></div>
-        <div><div class="font-bold text-primary text-sm">Mantenimiento Preventivo y Correctivo</div><div class="text-xs text-on-surface-variant mt-0.5">Programas de mantenimiento para tu flota</div></div>
+        <div><div class="font-bold text-primary text-sm" data-en="Preventive &amp; Corrective Maintenance">Mantenimiento Preventivo y Correctivo</div><div class="text-xs text-on-surface-variant mt-0.5">Programas de mantenimiento para tu flota</div></div>
         <i class="fas fa-chevron-right text-outline ml-auto"></i>
       </a>
       <a href="reparacion" class="flex items-center gap-4 p-5 bg-surface-container-low rounded-xl hover:bg-surface-container transition border border-outline-variant">
         <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center flex-shrink-0"><i class="fas fa-tools text-white text-sm"></i></div>
-        <div><div class="font-bold text-primary text-sm">Reparación de Equipos y Sistemas</div><div class="text-xs text-on-surface-variant mt-0.5">Diagnóstico y reparación de cualquier falla</div></div>
+        <div><div class="font-bold text-primary text-sm" data-en="Equipment &amp; Systems Repair">Reparación de Equipos y Sistemas</div><div class="text-xs text-on-surface-variant mt-0.5">Diagnóstico y reparación de cualquier falla</div></div>
         <i class="fas fa-chevron-right text-outline ml-auto"></i>
       </a>
     </div>
@@ -221,13 +221,13 @@
     <h2 class="text-2xl font-bold text-primary mb-2" data-en="Inquire about parts:">Consultar por repuestos:</h2>
     <div class="space-y-4 text-left mt-4">
       <div class="bg-white border border-outline-variant rounded-xl p-5 space-y-3">
-        <p class="text-[10px] font-bold text-outline uppercase tracking-wider">TELÉFONOS</p>
+        <p class="text-[10px] font-bold text-outline uppercase tracking-wider" data-en="PHONES">TELÉFONOS</p>
         <a href="tel:+5493415551826" class="flex items-center gap-3 text-on-surface text-sm hover:text-primary"><i class="fas fa-phone text-primary text-xs w-4 text-center"></i> <span class="font-medium">+54 9 341 555 1826</span> <span class="text-xs text-outline">(técnico)</span></a>
         <a href="tel:+5493415552503" class="flex items-center gap-3 text-on-surface text-sm hover:text-primary"><i class="fas fa-phone text-primary text-xs w-4 text-center"></i> <span class="font-medium">+54 9 341 555 2503</span> <span class="text-xs text-outline">(adm)</span></a>
         <a href="tel:+5493415528124" class="flex items-center gap-3 text-on-surface text-sm hover:text-primary"><i class="fas fa-phone text-primary text-xs w-4 text-center"></i> <span class="font-medium">+54 9 341 552 8124</span> <span class="text-xs text-outline">(adm)</span></a>
       </div>
       <div class="bg-white border border-outline-variant rounded-xl p-5">
-        <p class="text-[10px] font-bold text-outline uppercase tracking-wider mb-2">EMAIL</p>
+        <p class="text-[10px] font-bold text-outline uppercase tracking-wider mb-2" data-en="EMAIL">EMAIL</p>
         <a href="mailto:Tecniship@yahoo.com.ar" class="flex items-center gap-3 text-on-surface text-sm font-medium hover:text-primary"><i class="fas fa-envelope text-primary text-sm w-4 text-center"></i> Tecniship@yahoo.com.ar</a>
       </div>
     </div>
