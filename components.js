@@ -78,9 +78,9 @@
           <span data-en="Services">Servicios</span> <span id="mobileServIcon" class="text-xl font-light leading-none">+</span>
         </button>
         <div id="mobileServ" class="hidden bg-surface-container-low">
+          <a href="repuestos" class="flex items-center justify-between px-8 py-3.5 text-sm font-bold text-signal-red border-t border-outline-variant bg-white" data-en="Spare Parts Sale">Venta de Repuestos <i class="fas fa-arrow-right text-xs"></i></a>
           <a href="mantenimiento" class="flex items-center px-8 py-3 text-sm text-on-surface-variant hover:text-primary border-t border-outline-variant" data-en="Naval Maintenance">Mantenimiento Naval</a>
           <a href="reparacion" class="flex items-center px-8 py-3 text-sm text-on-surface-variant hover:text-primary border-t border-outline-variant" data-en="Equipment Repair">Reparación de Equipos</a>
-          <a href="repuestos" class="flex items-center px-8 py-3 text-sm text-on-surface-variant hover:text-primary border-t border-outline-variant" data-en="Spare Parts">Venta de Repuestos</a>
         </div>
       </div>
       <div class="border-b border-outline-variant">
