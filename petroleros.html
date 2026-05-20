@@ -75,7 +75,7 @@ body { font-family: 'Inter', sans-serif; color: #181c20; }
 <main>
 
 <!-- Hero -->
-<section class="relative h-[350px] md:h-[420px]">
+<section class="relative h-[350px] md:h-[420px] lg:h-[260px]">
   <div class="absolute inset-0">
     <img alt="Barcos petroleros y barcazas" class="w-full h-full object-cover object-center" src="Petrolero.webp" fetchpriority="high" loading="eager"/>
     <div class="absolute inset-0" style="background:linear-gradient(to bottom, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.6) 55%, rgba(0,0,0,0.3) 100%)"></div>
@@ -86,6 +86,12 @@ body { font-family: 'Inter', sans-serif; color: #181c20; }
       <h1 class="text-on-primary text-4xl md:text-5xl font-bold mb-4" data-en="Oil Tankers">Barcos Petroleros</h1>
       <p class="text-on-primary text-lg font-light opacity-80" data-en="Specialized cargo systems service · Operational safety · Original spare parts">Servicio especializado en sistemas de carga · Seguridad operativa · Repuestos originales</p>
     </div>
+  </div>
+  <!-- Wave Divider -->
+  <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none z-[3]">
+    <svg class="relative block w-full h-[40px] md:h-[60px] lg:h-[80px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200" preserveAspectRatio="none">
+      <path fill="#ffffff" d="M0,80 C400,80 1000,200 1440,160 L1440,200 L0,200 Z"></path>
+    </svg>
   </div>
 </section>
 
