@@ -21,7 +21,7 @@
 <header class="sticky top-0 z-50 bg-surface-container-lowest shadow-sm py-4">
   <div class="container mx-auto px-4 flex justify-between items-center">
     <a class="flex-shrink-0" href="/">
-      <img src="logo.webp" alt="MB Naval" class="h-12 w-auto object-contain" />
+      <img src="logo.webp" alt="Tecniship SRL" class="h-12 w-auto object-contain" />
     </a>
     <nav class="hidden lg:flex items-center space-x-6">
       <a class="nav-link" href="/" data-en="Home">Inicio</a>
@@ -65,7 +65,7 @@
   <div class="absolute right-0 top-0 h-full w-[300px] bg-white shadow-2xl flex flex-col">
     <div class="flex justify-between items-center px-6 py-5 border-b border-outline-variant">
       <a href="/" class="flex-shrink-0">
-        <img src="logo.webp" alt="MB Naval" class="h-8 w-auto object-contain" />
+        <img src="logo.webp" alt="Tecniship SRL" class="h-8 w-auto object-contain" />
       </a>
       <button onclick="closeMobileMenu()" class="text-on-surface-variant hover:text-primary text-xl w-8 h-8 flex items-center justify-center"><i class="fas fa-times"></i></button>
     </div>
@@ -120,7 +120,7 @@
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
       <div class="space-y-4">
         <div class="mb-5">
-          <a href="/"><img src="logo.webp" alt="MB Naval" style="height:52px;width:auto;object-fit:contain" /></a>
+          <a href="/"><img src="logo.webp" alt="Tecniship SRL" style="height:52px;width:auto;object-fit:contain" /></a>
         </div>
         <p class="text-xs text-on-surface-variant leading-relaxed pr-4" data-en="Comprehensive maintenance, repair and spare parts service for tugboats, oil tankers and bulk carriers in Argentina.">Servicio integral de mantenimiento, reparación y venta de repuestos navales para barcos remolcadores, petroleros y cerealeros en Argentina.</p>
         <p class="text-xs font-medium text-primary" data-en="Paraná and Paraguay Waterways — Argentina">Vías navegables del Paraná y Paraguay — Argentina</p>

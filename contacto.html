@@ -47,8 +47,8 @@ body { font-family: 'Inter', sans-serif; color: #181c20; }
 .nav-link:hover { color: #002a4d; }
 .btn-primary { background: #002a4d; color: #fff; padding: 8px 24px; border-radius: 12px; font-weight: 500; font-size: 14px; display: inline-flex; align-items: center; text-decoration: none; transition: background .2s; }
 .btn-primary:hover { background: #316193; }
-.btn-cotizar { background: #002a4d; color: #fff; padding: 10px 20px; border-radius: 50px; font-size: 13px; font-weight: 700; display: inline-flex; align-items: center; text-decoration: none; letter-spacing: 0.04em; transition: background .2s; white-space: nowrap; }
-.btn-cotizar:hover { background: #004071; }
+.btn-cotizar { background: #B10D28; color: #fff; padding: 10px 20px; border-radius: 50px; font-size: 13px; font-weight: 700; display: inline-flex; align-items: center; text-decoration: none; letter-spacing: 0.04em; transition: background .2s; white-space: nowrap; }
+.btn-cotizar:hover { background: #8b0a1e; }
 .btn-outline { border: 1.5px solid #002a4d; color: #002a4d; background: transparent; padding: 11px 36px; border-radius: 50px; font-size: 14px; font-weight: 500; display: inline-flex; align-items: center; text-decoration: none; transition: all .2s; }
 .btn-outline:hover { background: #002a4d; color: #fff; }
 .hero-overlay { background: linear-gradient(to right, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.0) 100%); }
@@ -79,7 +79,7 @@ body { font-family: 'Inter', sans-serif; color: #181c20; }
     <div class="absolute inset-0" style="background:rgba(0,20,40,0.55)"></div>
   </div>
   <div class="relative z-10 container mx-auto px-4">
-    <p class="text-on-primary text-sm font-medium tracking-widest uppercase mb-3 opacity-75" data-en="MB Naval">MB Naval</p>
+    <p class="text-on-primary text-sm font-medium tracking-widest uppercase mb-3 opacity-75" data-en="Tecniship SRL">Tecniship SRL</p>
     <h1 class="text-on-primary text-4xl md:text-5xl font-bold mb-4" data-en="Contact">Contacto</h1>
     <p class="text-on-primary text-lg font-light opacity-80" data-en="We respond fast · Emergencies 24/7 · Free quote">Respondemos rápido · Emergencias 24/7 · Presupuesto sin cargo</p>
   </div>
@@ -146,6 +146,39 @@ body { font-family: 'Inter', sans-serif; color: #181c20; }
         </div>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- Formulario de contacto -->
+<section class="py-16 bg-surface-container-lowest">
+  <div class="container mx-auto px-4 max-w-4xl">
+    <div class="text-center mb-10">
+      <p class="text-signal-red font-bold text-sm tracking-widest uppercase mb-3" data-en="SEND US A MESSAGE">ENVIANOS TU CONSULTA</p>
+      <h2 class="text-2xl font-bold text-primary mb-2" data-en="We respond quickly">Respondemos rápido</h2>
+    </div>
+    <form action="mailto:Tecniship@yahoo.com.ar" method="get" enctype="text/plain" class="bg-white rounded-2xl border border-outline-variant p-8 shadow-sm">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+        <div>
+          <label class="text-[11px] font-bold text-outline uppercase tracking-wider block mb-1.5" data-en="Full name">Nombre completo</label>
+          <input type="text" name="Nombre" placeholder="Juan García" class="w-full border border-outline-variant rounded-xl px-4 py-3 text-sm text-on-surface focus:outline-none focus:border-primary transition"/>
+        </div>
+        <div>
+          <label class="text-[11px] font-bold text-outline uppercase tracking-wider block mb-1.5" data-en="Email">Email</label>
+          <input type="email" name="Email" placeholder="juan@empresa.com" class="w-full border border-outline-variant rounded-xl px-4 py-3 text-sm text-on-surface focus:outline-none focus:border-primary transition"/>
+        </div>
+      </div>
+      <div class="mb-4">
+        <label class="text-[11px] font-bold text-outline uppercase tracking-wider block mb-1.5" data-en="Subject">Asunto</label>
+        <input type="text" name="Asunto" placeholder="Consulta sobre mantenimiento / repuestos / reparación" class="w-full border border-outline-variant rounded-xl px-4 py-3 text-sm text-on-surface focus:outline-none focus:border-primary transition"/>
+      </div>
+      <div class="mb-6">
+        <label class="text-[11px] font-bold text-outline uppercase tracking-wider block mb-1.5" data-en="Message">Mensaje</label>
+        <textarea name="Mensaje" rows="4" placeholder="Describí tu consulta o necesidad..." class="w-full border border-outline-variant rounded-xl px-4 py-3 text-sm text-on-surface focus:outline-none focus:border-primary transition resize-none"></textarea>
+      </div>
+      <button type="submit" class="w-full py-3.5 rounded-full text-white font-bold text-sm tracking-wide transition hover:brightness-90 flex items-center justify-center gap-2" style="background:#B10D28">
+        <i class="fas fa-paper-plane"></i> <span data-en="Send message">Enviar mensaje</span>
+      </button>
+    </form>
   </div>
 </section>
 
