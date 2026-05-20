@@ -393,19 +393,58 @@ body { font-family: 'Inter', sans-serif; color: #181c20; }
 </section>
 
 <!-- Contacto -->
-<section class="py-16 bg-surface-container" id="contacto">
-  <div class="container mx-auto px-4 max-w-xl text-center">
-    <h2 class="text-2xl font-bold text-primary mb-2" data-en="Contact:">Contacto:</h2>
-    <div class="space-y-4 text-left mt-4">
-      <div class="bg-white border border-outline-variant rounded-xl p-5 space-y-3">
-        <p class="text-[10px] font-bold text-outline uppercase tracking-wider">TELÉFONOS</p>
-        <a href="tel:+5493415551826" class="flex items-center gap-3 text-on-surface text-sm hover:text-primary"><i class="fas fa-phone text-primary text-xs w-4 text-center"></i> <span class="font-medium">+54 9 341 555 1826</span> <span class="text-xs text-outline">(técnico)</span></a>
-        <a href="tel:+5493415552503" class="flex items-center gap-3 text-on-surface text-sm hover:text-primary"><i class="fas fa-phone text-primary text-xs w-4 text-center"></i> <span class="font-medium">+54 9 341 555 2503</span> <span class="text-xs text-outline">(adm)</span></a>
-        <a href="tel:+5493415528124" class="flex items-center gap-3 text-on-surface text-sm hover:text-primary"><i class="fas fa-phone text-primary text-xs w-4 text-center"></i> <span class="font-medium">+54 9 341 552 8124</span> <span class="text-xs text-outline">(adm)</span></a>
+<section class="bg-primary py-16" id="contacto">
+  <div class="container mx-auto px-4">
+    <div class="flex flex-col lg:flex-row gap-12 items-start">
+      <!-- Izquierda: CTA -->
+      <div class="lg:w-5/12">
+        <p class="text-signal-red font-bold text-xs tracking-widest uppercase mb-3" data-en="CONTACT US">CONTACTO</p>
+        <h2 class="text-white text-3xl md:text-4xl font-bold mb-4 leading-tight" data-en="Ready to get a quote?">¿Listo para cotizar?</h2>
+        <div class="w-12 h-1 bg-signal-red mb-6"></div>
+        <p class="text-white opacity-70 text-sm leading-relaxed mb-8" data-en="Our team is ready to assist you. Write to us, call us or visit us — we respond fast.">Nuestro equipo está listo para asistirte. Escribinos, llamanos o visitanos — respondemos rápido.</p>
+        <div class="flex flex-col sm:flex-row gap-3">
+          <a href="contacto" class="flex items-center justify-center gap-2 bg-signal-red hover:brightness-90 transition text-white font-bold text-sm px-6 py-3 rounded-full" data-en="CONTACT US →">CONTACTARNOS →</a>
+          <a href="tel:+5493415551826" class="flex items-center justify-center gap-2 border border-white border-opacity-30 hover:border-opacity-60 transition text-white font-bold text-sm px-6 py-3 rounded-full"><i class="fas fa-phone text-xs"></i> +54 9 341 555 1826</a>
+        </div>
       </div>
-      <div class="bg-white border border-outline-variant rounded-xl p-5">
-        <p class="text-[10px] font-bold text-outline uppercase tracking-wider mb-2">EMAIL</p>
-        <a href="mailto:Tecniship@yahoo.com.ar" class="flex items-center gap-3 text-on-surface text-sm font-medium hover:text-primary"><i class="fas fa-envelope text-primary text-sm w-4 text-center"></i> Tecniship@yahoo.com.ar</a>
+      <!-- Derecha: info -->
+      <div class="lg:w-7/12 grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <!-- Teléfonos -->
+        <div class="bg-white bg-opacity-5 border border-white border-opacity-10 rounded-xl p-5">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-8 h-8 rounded-full bg-signal-red flex items-center justify-center flex-shrink-0"><i class="fas fa-phone text-white text-xs"></i></div>
+            <p class="text-white text-[11px] font-bold tracking-widest uppercase opacity-70" data-en="PHONES">TELÉFONOS</p>
+          </div>
+          <div class="space-y-2.5">
+            <a href="tel:+5493415551826" class="flex items-center gap-2 text-white text-sm hover:text-signal-red transition"><span class="font-medium">+54 9 341 555 1826</span><span class="text-xs opacity-50">(técnico)</span></a>
+            <a href="tel:+5493415552503" class="flex items-center gap-2 text-white text-sm hover:text-signal-red transition"><span class="font-medium">+54 9 341 555 2503</span><span class="text-xs opacity-50">(adm)</span></a>
+            <a href="tel:+5493415528124" class="flex items-center gap-2 text-white text-sm hover:text-signal-red transition"><span class="font-medium">+54 9 341 552 8124</span><span class="text-xs opacity-50">(adm)</span></a>
+          </div>
+        </div>
+        <!-- Email -->
+        <div class="bg-white bg-opacity-5 border border-white border-opacity-10 rounded-xl p-5">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-8 h-8 rounded-full bg-signal-red flex items-center justify-center flex-shrink-0"><i class="fas fa-envelope text-white text-xs"></i></div>
+            <p class="text-white text-[11px] font-bold tracking-widest uppercase opacity-70">EMAIL</p>
+          </div>
+          <a href="mailto:Tecniship@yahoo.com.ar" class="text-white text-sm font-medium hover:text-signal-red transition break-all">Tecniship@yahoo.com.ar</a>
+        </div>
+        <!-- Dirección -->
+        <div class="bg-white bg-opacity-5 border border-white border-opacity-10 rounded-xl p-5">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-8 h-8 rounded-full bg-signal-red flex items-center justify-center flex-shrink-0"><i class="fas fa-map-marker-alt text-white text-xs"></i></div>
+            <p class="text-white text-[11px] font-bold tracking-widest uppercase opacity-70" data-en="ADDRESS">DIRECCIÓN</p>
+          </div>
+          <p class="text-white text-sm opacity-80">Ruta 9 Km. 280,5, S2126<br/>Alvear, Santa Fe, Argentina</p>
+        </div>
+        <!-- Horarios -->
+        <div class="bg-white bg-opacity-5 border border-white border-opacity-10 rounded-xl p-5">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-8 h-8 rounded-full bg-signal-red flex items-center justify-center flex-shrink-0"><i class="fas fa-clock text-white text-xs"></i></div>
+            <p class="text-white text-[11px] font-bold tracking-widest uppercase opacity-70" data-en="HOURS">HORARIOS</p>
+          </div>
+          <p class="text-white text-sm opacity-80" data-en="Mon–Fri 07:00–18:00<br/>Sat 08:00–16:00">Lun–Vie 07:00–18:00<br/>Sáb 08:00–16:00</p>
+        </div>
       </div>
     </div>
   </div>
