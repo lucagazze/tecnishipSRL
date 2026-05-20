@@ -86,14 +86,60 @@ body { font-family: 'Inter', sans-serif; color: #181c20; }
 
 <!-- Quiénes somos — texto principal -->
 <section class="py-16 bg-surface-container-lowest">
-  <div class="container mx-auto px-4 max-w-4xl">
-    <div class="text-center mb-12">
-      <p class="text-signal-red font-bold text-sm tracking-widest uppercase mb-3" data-en="ABOUT US">SOBRE NOSOTROS</p>
-      <h2 class="text-3xl md:text-4xl font-bold text-primary mb-6 leading-tight" data-en="Committed to excellence and efficiency">Comprometidos con la<br/>excelencia y la eficiencia</h2>
-      <div class="w-16 h-1 bg-signal-red mx-auto mb-8"></div>
-      <p class="text-on-surface-variant leading-relaxed text-[15px] max-w-2xl mx-auto" data-en="At MB Naval we provide comprehensive solutions to the naval industry, with a highly trained team and a strong commitment to quality, safety and the environment.">
-        En <strong>Tecniship SRL</strong> brindamos soluciones integrales a la industria naval, con un equipo altamente capacitado y un fuerte compromiso con la calidad, la seguridad y el medio ambiente.
-      </p>
+  <div class="container mx-auto px-4 max-w-5xl">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start mb-14">
+      <div>
+        <p class="text-signal-red font-bold text-sm tracking-widest uppercase mb-3" data-en="ABOUT US">SOBRE NOSOTROS</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-primary mb-6 leading-tight" data-en="Committed to excellence and efficiency">Comprometidos con la<br/>excelencia y la eficiencia</h2>
+        <div class="w-16 h-1 bg-signal-red mb-8"></div>
+        <p class="text-on-surface-variant leading-relaxed text-[15px] mb-5" data-en="Tecniship SRL is a company specialized in comprehensive naval solutions for the river industry of Argentina. With more than 15 years of experience, we serve vessels operating on the Paraná and Paraguay rivers, providing technical services, maintenance, repairs and spare parts.">
+          <strong>Tecniship SRL</strong> es una empresa especializada en soluciones navales integrales para la industria fluvial de Argentina. Con más de 15 años de experiencia, atendemos embarcaciones que operan en los ríos Paraná y Paraguay, brindando servicios técnicos, mantenimiento, reparaciones y repuestos.
+        </p>
+        <p class="text-on-surface-variant leading-relaxed text-[15px] mb-5" data-en="We were born from the need of the naval sector for a reliable, fast and technically specialized supplier. Today we are the reference for shipowners, operators and companies with river fleets in the Litoral region.">
+          Nacimos de la necesidad del sector naval de contar con un proveedor confiable, rápido y técnicamente especializado. Hoy somos el referente para armadores, operadores y empresas con flotas fluviales de la región Litoral.
+        </p>
+        <p class="text-on-surface-variant leading-relaxed text-[15px]" data-en="Our team works under international quality standards, with permanent stock of spare parts and emergency response capacity 24 hours a day, 7 days a week.">
+          Nuestro equipo trabaja bajo estándares internacionales de calidad, con stock permanente de repuestos y capacidad de respuesta ante emergencias las 24 horas, los 7 días de la semana.
+        </p>
+      </div>
+      <div class="space-y-4">
+        <div class="flex items-start gap-4 bg-surface-container-low rounded-xl p-5">
+          <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center flex-shrink-0">
+            <i class="fas fa-map-marker-alt text-white text-sm"></i>
+          </div>
+          <div>
+            <p class="text-xs font-bold text-outline uppercase tracking-wider mb-1">UBICACIÓN</p>
+            <p class="text-on-surface text-sm">Ruta 9 Km. 280,5 — Alvear, Santa Fe<br/><span class="text-on-surface-variant text-xs">A metros del canal de navegación del Paraná</span></p>
+          </div>
+        </div>
+        <div class="flex items-start gap-4 bg-surface-container-low rounded-xl p-5">
+          <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center flex-shrink-0">
+            <i class="fas fa-history text-white text-sm"></i>
+          </div>
+          <div>
+            <p class="text-xs font-bold text-outline uppercase tracking-wider mb-1">TRAYECTORIA</p>
+            <p class="text-on-surface text-sm">Más de 15 años en la industria naval fluvial<br/><span class="text-on-surface-variant text-xs">+200 embarcaciones atendidas</span></p>
+          </div>
+        </div>
+        <div class="flex items-start gap-4 bg-surface-container-low rounded-xl p-5">
+          <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center flex-shrink-0">
+            <i class="fas fa-certificate text-white text-sm"></i>
+          </div>
+          <div>
+            <p class="text-xs font-bold text-outline uppercase tracking-wider mb-1">CERTIFICACIONES</p>
+            <p class="text-on-surface text-sm">ISO 9001 · ISO 14001 · ISO 45001<br/><span class="text-on-surface-variant text-xs">Operamos bajo normativas ABS, DNV e IMO</span></p>
+          </div>
+        </div>
+        <div class="flex items-start gap-4 bg-surface-container-low rounded-xl p-5">
+          <div class="w-10 h-10 rounded-full bg-signal-red flex items-center justify-center flex-shrink-0">
+            <i class="fas fa-bolt text-white text-sm"></i>
+          </div>
+          <div>
+            <p class="text-xs font-bold text-outline uppercase tracking-wider mb-1">EMERGENCIAS</p>
+            <p class="text-on-surface text-sm">Disponibles 24/7 para respuesta urgente<br/><span class="text-on-surface-variant text-xs">En puerto o a bordo, sin tiempos de espera</span></p>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- 3 pilares -->
@@ -154,7 +200,7 @@ body { font-family: 'Inter', sans-serif; color: #181c20; }
 </section>
 
 <!-- Por qué elegirnos -->
-<section class="py-16 bg-surface-container">
+<section class="py-16 bg-surface-container lg:hidden">
   <div class="container mx-auto px-4 max-w-4xl">
     <div class="text-center mb-10">
       <h2 class="text-2xl font-bold text-primary mb-2" data-en="Why choose us?">¿Por qué elegirnos?</h2>
@@ -205,7 +251,7 @@ body { font-family: 'Inter', sans-serif; color: #181c20; }
 </section>
 
 <!-- Nuestros valores -->
-<section class="py-16 bg-surface-container-lowest">
+<section class="py-16 bg-surface-container-lowest lg:hidden">
   <div class="container mx-auto px-4 max-w-4xl">
     <div class="text-center mb-10">
       <h2 class="text-2xl font-bold text-primary mb-2" data-en="Our values">Nuestros valores</h2>
@@ -240,7 +286,7 @@ body { font-family: 'Inter', sans-serif; color: #181c20; }
 </section>
 
 <!-- CTA -->
-<section class="py-14 bg-primary">
+<section class="py-14 bg-primary lg:hidden">
   <div class="container mx-auto px-4 text-center">
     <h2 class="text-2xl font-bold text-white mb-3" data-en="Ready to work together?">¿Listo para trabajar juntos?</h2>
     <p class="text-white opacity-80 mb-8 text-[15px]" data-en="Contact us and get a free quote for your fleet.">Contactanos y obtené un presupuesto sin cargo para tu flota.</p>
