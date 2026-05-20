@@ -155,39 +155,6 @@ body { font-family: 'Inter', sans-serif; color: #181c20; }
   </div>
 </section>
 
-<!-- Formulario de contacto -->
-<section class="py-16 bg-surface-container-lowest">
-  <div class="container mx-auto px-4 max-w-4xl">
-    <div class="text-center mb-10">
-      <p class="text-signal-red font-bold text-sm tracking-widest uppercase mb-3" data-en="SEND US A MESSAGE">ENVIANOS TU CONSULTA</p>
-      <h2 class="text-2xl font-bold text-primary mb-2" data-en="We respond quickly">Respondemos rápido</h2>
-    </div>
-    <form action="mailto:Tecniship@yahoo.com.ar" method="get" enctype="text/plain" class="bg-white rounded-2xl border border-outline-variant p-8 shadow-sm">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-        <div>
-          <label class="text-[11px] font-bold text-outline uppercase tracking-wider block mb-1.5" data-en="Full name">Nombre completo</label>
-          <input type="text" name="Nombre" placeholder="Juan García" class="w-full border border-outline-variant rounded-xl px-4 py-3 text-sm text-on-surface focus:outline-none focus:border-primary transition"/>
-        </div>
-        <div>
-          <label class="text-[11px] font-bold text-outline uppercase tracking-wider block mb-1.5" data-en="Email">Email</label>
-          <input type="email" name="Email" placeholder="juan@empresa.com" class="w-full border border-outline-variant rounded-xl px-4 py-3 text-sm text-on-surface focus:outline-none focus:border-primary transition"/>
-        </div>
-      </div>
-      <div class="mb-4">
-        <label class="text-[11px] font-bold text-outline uppercase tracking-wider block mb-1.5" data-en="Subject">Asunto</label>
-        <input type="text" name="Asunto" placeholder="Consulta sobre mantenimiento / repuestos / reparación" class="w-full border border-outline-variant rounded-xl px-4 py-3 text-sm text-on-surface focus:outline-none focus:border-primary transition"/>
-      </div>
-      <div class="mb-6">
-        <label class="text-[11px] font-bold text-outline uppercase tracking-wider block mb-1.5" data-en="Message">Mensaje</label>
-        <textarea name="Mensaje" rows="4" placeholder="Describí tu consulta o necesidad..." class="w-full border border-outline-variant rounded-xl px-4 py-3 text-sm text-on-surface focus:outline-none focus:border-primary transition resize-none"></textarea>
-      </div>
-      <button type="submit" class="w-full py-3.5 rounded-full text-white font-bold text-sm tracking-wide transition hover:brightness-90 flex items-center justify-center gap-2" style="background:#B10D28">
-        <i class="fas fa-paper-plane"></i> <span data-en="Send message">Enviar mensaje</span>
-      </button>
-    </form>
-  </div>
-</section>
-
 <!-- Emergency protocol cards -->
 <section class="py-12 bg-surface-container">
   <div class="container mx-auto px-4 max-w-5xl">
@@ -213,6 +180,42 @@ body { font-family: 'Inter', sans-serif; color: #181c20; }
         </div>
         <h4 class="font-bold text-primary mb-2">Coordinamos el servicio</h4>
         <p class="text-sm text-on-surface-variant leading-relaxed">Enviamos un técnico o te damos el repuesto que necesitás.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Stats strip -->
+<section class="py-10 bg-primary">
+  <div class="container mx-auto px-4 lg:px-8">
+    <div class="grid grid-cols-2 md:flex md:flex-row md:justify-between md:items-center gap-6 md:gap-4 text-white">
+      <div class="flex items-center gap-3">
+        <i class="fas fa-ship text-3xl opacity-90 w-9 text-center"></i>
+        <div class="text-left">
+          <div class="text-base font-bold leading-none mb-1">+15</div>
+          <div class="text-[10px] uppercase tracking-widest font-semibold opacity-80" data-en="YEARS OF EXPERIENCE">AÑOS DE EXPERIENCIA</div>
+        </div>
+      </div>
+      <div class="flex items-center gap-3">
+        <i class="fas fa-anchor text-3xl opacity-90 w-9 text-center"></i>
+        <div class="text-left">
+          <div class="text-base font-bold leading-none mb-1">+200</div>
+          <div class="text-[10px] uppercase tracking-widest font-semibold opacity-80" data-en="VESSELS SERVED">EMBARCACIONES ATENDIDAS</div>
+        </div>
+      </div>
+      <div class="flex items-center gap-3">
+        <i class="fas fa-check-circle text-3xl opacity-90 text-signal-red w-9 text-center"></i>
+        <div class="text-left">
+          <div class="text-base font-bold leading-none mb-1">SERVICIOS</div>
+          <div class="text-[10px] uppercase tracking-widest font-semibold opacity-80" data-en="RELIABLE">CONFIABLES</div>
+        </div>
+      </div>
+      <div class="flex items-center gap-3">
+        <i class="fas fa-globe-americas text-3xl opacity-90 text-signal-red w-9 text-center"></i>
+        <div class="text-left">
+          <div class="text-base font-bold leading-none mb-1">COBERTURA</div>
+          <div class="text-[10px] uppercase tracking-widest font-semibold opacity-80" data-en="NATIONAL &amp; INTERNATIONAL">NACIONAL E INTERNACIONAL</div>
+        </div>
       </div>
     </div>
   </div>
