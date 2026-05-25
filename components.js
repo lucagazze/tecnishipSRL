@@ -26,14 +26,8 @@
     <nav class="hidden lg:flex items-center space-x-6">
       <a class="nav-link" href="/" data-en="Home">Inicio</a>
       <a class="nav-link" href="nosotros" data-en="About Us">Quiénes Somos</a>
-      <div class="relative group">
-        <a class="nav-link flex items-center" href="servicios"><span data-en="Services">Servicios</span> <i class="fas fa-chevron-down ml-1 text-xs"></i></a>
-        <div class="absolute left-0 mt-2 w-52 bg-surface-container-lowest border border-outline-variant rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
-          <a class="block px-4 py-2 text-sm font-semibold text-signal-red hover:bg-surface-container-low border-b border-outline-variant" href="repuestos" data-en="Spare Parts">Venta de Repuestos</a>
-          <a class="block px-4 py-2 text-sm text-on-surface hover:bg-surface-container-low" href="mantenimiento" data-en="Naval Maintenance">Mantenimiento Naval</a>
-          <a class="block px-4 py-2 text-sm text-on-surface hover:bg-surface-container-low" href="reparacion" data-en="Equipment Repair">Reparación de Equipos</a>
-        </div>
-      </div>
+      <a class="nav-link" href="servicios" data-en="Services">Servicios</a>
+      <a class="nav-link text-signal-red font-semibold" href="repuestos" data-en="Spare Parts">Repuestos</a>
       <div class="relative group">
         <button class="nav-link flex items-center" style="background:none;border:none;cursor:pointer"><span data-en="Fleet">Flota</span> <i class="fas fa-chevron-down ml-1 text-xs"></i></button>
         <div class="absolute left-0 mt-2 w-52 bg-surface-container-lowest border border-outline-variant rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
@@ -73,16 +67,8 @@
     <nav class="flex-1 overflow-y-auto">
       <a href="/" onclick="closeMobileMenu()" class="flex justify-between items-center px-6 py-4 text-on-surface font-medium border-b border-outline-variant hover:text-primary transition-colors" data-en="Home">Inicio</a>
       <a href="nosotros" onclick="closeMobileMenu()" class="flex justify-between items-center px-6 py-4 text-on-surface font-medium border-b border-outline-variant hover:text-primary transition-colors" data-en="About Us">Quiénes Somos</a>
-      <div class="border-b border-outline-variant">
-        <button onclick="toggleMobileSubmenu('mobileServ','mobileServIcon')" class="flex justify-between items-center w-full px-6 py-4 text-on-surface font-medium text-left">
-          <span data-en="Services">Servicios</span> <span id="mobileServIcon" class="text-xl font-light leading-none">+</span>
-        </button>
-        <div id="mobileServ" class="hidden bg-surface-container-low">
-          <a href="repuestos" class="flex items-center justify-between px-8 py-3.5 text-sm font-bold text-signal-red border-t border-outline-variant" data-en="Spare Parts Sale">Venta de Repuestos <i class="fas fa-arrow-right text-xs"></i></a>
-          <a href="mantenimiento" class="flex items-center px-8 py-3 text-sm text-on-surface-variant hover:text-primary border-t border-outline-variant" data-en="Naval Maintenance">Mantenimiento Naval</a>
-          <a href="reparacion" class="flex items-center px-8 py-3 text-sm text-on-surface-variant hover:text-primary border-t border-outline-variant" data-en="Equipment Repair">Reparación de Equipos</a>
-        </div>
-      </div>
+      <a href="servicios" onclick="closeMobileMenu()" class="flex justify-between items-center px-6 py-4 text-on-surface font-medium border-b border-outline-variant hover:text-primary transition-colors" data-en="Services">Servicios</a>
+      <a href="repuestos" onclick="closeMobileMenu()" class="flex justify-between items-center px-6 py-4 font-bold text-signal-red border-b border-outline-variant hover:text-red-800 transition-colors" data-en="Spare Parts">Repuestos</a>
       <div class="border-b border-outline-variant">
         <button onclick="toggleMobileSubmenu('mobileFlota','mobileFlotaIcon')" class="flex justify-between items-center w-full px-6 py-4 text-on-surface font-medium text-left">
           <span data-en="Fleet">Flota</span> <span id="mobileFlotaIcon" class="text-xl font-light leading-none">+</span>
