@@ -61,16 +61,6 @@
       <a href="nosotros" onclick="closeMobileMenu()" class="flex justify-between items-center px-6 py-4 text-on-surface font-medium border-b border-outline-variant hover:text-primary transition-colors" data-en="About Us">Quiénes Somos</a>
       <a href="servicios" onclick="closeMobileMenu()" class="flex justify-between items-center px-6 py-4 text-on-surface font-medium border-b border-outline-variant hover:text-primary transition-colors" data-en="Services">Servicios</a>
       <a href="repuestos" onclick="closeMobileMenu()" class="flex justify-between items-center px-6 py-4 font-bold text-signal-red border-b border-outline-variant hover:text-red-800 transition-colors" data-en="Spare Parts">Repuestos</a>
-      <div class="border-b border-outline-variant">
-        <button onclick="toggleMobileSubmenu('mobileFlota','mobileFlotaIcon')" class="flex justify-between items-center w-full px-6 py-4 text-on-surface font-medium text-left">
-          <span data-en="Fleet">Flota</span> <span id="mobileFlotaIcon" class="text-xl font-light leading-none">+</span>
-        </button>
-        <div id="mobileFlota" class="hidden bg-surface-container-low">
-          <a href="remolcadores" class="flex items-center px-8 py-3 text-sm text-on-surface-variant hover:text-primary border-t border-outline-variant" data-en="Tugboats">Remolcadores</a>
-          <a href="petroleros" class="flex items-center px-8 py-3 text-sm text-on-surface-variant hover:text-primary border-t border-outline-variant" data-en="Oil Tankers">Barcos Petroleros</a>
-          <a href="graneleros" class="flex items-center px-8 py-3 text-sm text-on-surface-variant hover:text-primary border-t border-outline-variant" data-en="Bulk Carriers">Graneleros / Cerealeros</a>
-        </div>
-      </div>
       <a href="calidad" onclick="closeMobileMenu()" class="flex justify-between items-center px-6 py-4 text-on-surface font-medium border-b border-outline-variant hover:text-primary transition-colors" data-en="Quality">Calidad</a>
       <a href="contacto" onclick="closeMobileMenu()" class="flex justify-between items-center px-6 py-4 text-on-surface font-medium border-b border-outline-variant hover:text-primary transition-colors" data-en="Contact">Contacto</a>
       <div class="px-6 py-4 border-b border-outline-variant">
@@ -85,7 +75,6 @@
     { href: 'mantenimiento.html',  label: 'Mantenimiento Naval',   en: 'Naval Maintenance', page: 'mantenimiento' },
     { href: 'reparacion.html',     label: 'Reparación de Equipos', en: 'Equipment Repair',  page: 'reparacion' },
     { href: 'repuestos.html',      label: 'Venta de Repuestos',    en: 'Spare Parts',       page: 'repuestos' },
-    { href: 'index.html#flota',    label: 'Flota que Atendemos',   en: 'Fleet We Serve',    page: '' },
     { href: '#contacto',           label: 'Contacto',              en: 'Contact',           page: '' },
   ];
 
