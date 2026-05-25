@@ -129,13 +129,6 @@
         </ul>
       </div>
       <div>
-        <h4 class="font-bold text-on-surface text-sm mb-4" data-en="FOLLOW US!">¡SEGUINOS!</h4>
-        <div class="flex space-x-2 mb-6">
-          <a class="bg-signal-red text-white h-8 w-8 rounded-full flex items-center justify-center hover:bg-red-800 transition" href="#"><i class="fab fa-linkedin-in text-sm"></i></a>
-          <a class="bg-signal-red text-white h-8 w-8 rounded-full flex items-center justify-center hover:bg-red-800 transition" href="#"><i class="fab fa-facebook-f text-sm"></i></a>
-          <a class="bg-signal-red text-white h-8 w-8 rounded-full flex items-center justify-center hover:bg-red-800 transition" href="#"><i class="fab fa-instagram text-sm"></i></a>
-          <a class="bg-signal-red text-white h-8 w-8 rounded-full flex items-center justify-center hover:bg-red-800 transition" href="https://wa.me/5493415551826" target="_blank"><i class="fab fa-whatsapp text-sm"></i></a>
-        </div>
         <a class="btn-cotizar text-[11px] py-2.5 px-5" href="#contacto"><i class="fas fa-file-alt mr-2"></i> <span data-en="REQUEST A QUOTE">SOLICITAR COTIZACIÓN</span></a>
       </div>
     </div>
