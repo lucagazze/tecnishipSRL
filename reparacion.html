@@ -75,17 +75,58 @@ body { font-family: 'Inter', sans-serif; color: #181c20; }
 <main>
 
 <!-- Hero -->
-<section class="relative h-[380px] md:h-[450px] lg:h-[420px] flex items-center justify-start overflow-hidden">
-  <div class="absolute inset-0 z-0">
-    <img alt="Reparación naval" class="w-full h-full object-cover object-center" src="Reparacion.webp" fetchpriority="high" loading="eager"/>
-    <div class="absolute inset-0 z-10 bg-gradient-to-r from-[#000d1a] via-[#001a33]/70 to-transparent md:from-10% md:via-40% md:to-70%"></div>
+<section class="relative h-[380px] md:h-[450px] lg:h-[420px] flex items-center justify-start bg-primary overflow-hidden">
+  <div class="absolute inset-0 z-0 w-full flex justify-end">
+    <div class="absolute inset-0 z-10 bg-gradient-to-r from-primary via-primary/80 to-transparent md:from-40% md:via-70%"></div>
+    <img alt="Reparación naval"  src="Reparacion.webp" fetchpriority="high" loading="eager" class="w-full md:w-2/3 h-full object-cover object-right" />
+  </div>
   </div>
   <div class="relative z-20 container mx-auto px-4">
     <p class="text-on-primary text-sm font-medium tracking-widest uppercase mb-3 opacity-75" data-en="Our Services">Nuestros Servicios</p>
-    <h1 class="text-on-primary text-4xl md:text-5xl font-bold mb-4" data-en="Equipment Repair">Reparación de Equipos</h1>
+    <h1 class="text-on-primary text-5xl md:text-6xl font-bold mb-6 leading-none tracking-tight">
+      REPARACIÓN DE<br/>
+      <span class="text-signal-red">EQUIPOS</span>
+    </h1>
     <p class="text-on-primary text-lg font-light opacity-80" data-en="Technical diagnostics · Field repair · Emergency response">Diagnóstico técnico · Reparación en campo · Respuesta ante emergencias</p>
   </div>
 </section>
+
+<!-- 4 Red Boxes (Strip) -->
+<section class="bg-primary text-white border-b-4 border-signal-red">
+  <div class="container mx-auto px-4">
+    <div class="grid grid-cols-1 md:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-white/10">
+      <div class="flex items-center gap-4 p-6">
+        <div class="w-12 h-12 border border-signal-red rounded-full flex items-center justify-center flex-shrink-0 bg-signal-red/20 text-signal-red"><i class="fas fa-tools text-xl"></i></div>
+        <div>
+          <h4 class="text-xs font-bold uppercase mb-1 tracking-wider">REPARACIÓN EXACTA</h4>
+          <p class="text-[11px] text-white/70 leading-tight">Soluciones de alta precisión para equipos navales complejos.</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-4 p-6">
+        <div class="w-12 h-12 border border-signal-red rounded-full flex items-center justify-center flex-shrink-0 bg-signal-red/20 text-signal-red"><i class="fas fa-bolt text-xl"></i></div>
+        <div>
+          <h4 class="text-xs font-bold uppercase mb-1 tracking-wider">RESPUESTA A EMERGENCIAS</h4>
+          <p class="text-[11px] text-white/70 leading-tight">Acción inmediata ante roturas o fallas imprevistas.</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-4 p-6">
+        <div class="w-12 h-12 border border-signal-red rounded-full flex items-center justify-center flex-shrink-0 bg-signal-red/20 text-signal-red"><i class="fas fa-cogs text-xl"></i></div>
+        <div>
+          <h4 class="text-xs font-bold uppercase mb-1 tracking-wider">REPUESTOS ORIGINALES</h4>
+          <p class="text-[11px] text-white/70 leading-tight">Utilizamos piezas de primeras marcas para garantizar durabilidad.</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-4 p-6">
+        <div class="w-12 h-12 border border-signal-red rounded-full flex items-center justify-center flex-shrink-0 bg-signal-red/20 text-signal-red"><i class="fas fa-check-circle text-xl"></i></div>
+        <div>
+          <h4 class="text-xs font-bold uppercase mb-1 tracking-wider">PRUEBAS DE RENDIMIENTO</h4>
+          <p class="text-[11px] text-white/70 leading-tight">Verificación exhaustiva post-reparación.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 <!-- Intro -->
 <section class="py-16 bg-surface-container-lowest">

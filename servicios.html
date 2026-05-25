@@ -71,20 +71,59 @@ body { font-family: 'Inter', sans-serif; color: #181c20; }
 <main>
 
 <!-- Hero -->
-<section class="relative h-[380px] md:h-[450px] lg:h-[420px] flex items-center justify-start overflow-hidden">
+<section class="relative h-[380px] md:h-[450px] lg:h-[420px] flex items-center justify-start bg-primary overflow-hidden">
   <!-- Imagen de fondo alineada a la derecha -->
   <div class="absolute inset-0 z-0 w-full flex justify-end">
-    <!-- El gradiente crea el efecto de fundido entre el azul sólido y la imagen -->
     <div class="absolute inset-0 z-10 bg-gradient-to-r from-primary via-primary/80 to-transparent md:from-40% md:via-70%"></div>
-    <img src="Reparacion.webp" alt="Servicios Navales" class="w-full md:w-2/3 h-full object-cover object-right" fetchpriority="high" loading="eager"/>
+    <img src="Reparacion.webp" alt="Servicios Navales"  fetchpriority="high" loading="eager" class="w-full md:w-2/3 h-full object-cover object-right" />
   </div>
   
   <div class="relative z-20 container mx-auto px-4 md:px-8">
     <h3 class="text-signal-red text-[11px] font-bold uppercase tracking-widest mb-3">SERVICIOS</h3>
-    <h1 class="text-white text-4xl md:text-5xl font-bold mb-4 max-w-2xl leading-tight" data-en="Naval maintenance and equipment repair">Mantenimiento naval <br/>y reparación de equipos</h1>
+    <h1 class="text-on-primary text-5xl md:text-6xl font-bold mb-6 leading-none tracking-tight">
+      MANTENIMIENTO<br/>
+      <span class="text-signal-red">NAVAL</span>
+    </h1>
     <p class="text-white text-base font-light opacity-90 max-w-xl leading-relaxed" data-en="Comprehensive technical solutions to guarantee the operational continuity, safety and reliability of your fleet.">Soluciones técnicas integrales para garantizar la continuidad operativa, seguridad y confiabilidad de tu flota.</p>
   </div>
 </section>
+
+<!-- 4 Red Boxes (Strip) -->
+<section class="bg-primary text-white border-b-4 border-signal-red">
+  <div class="container mx-auto px-4">
+    <div class="grid grid-cols-1 md:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-white/10">
+      <div class="flex items-center gap-4 p-6">
+        <div class="w-12 h-12 border border-signal-red rounded-full flex items-center justify-center flex-shrink-0 bg-signal-red/20 text-signal-red"><i class="fas fa-tools text-xl"></i></div>
+        <div>
+          <h4 class="text-xs font-bold uppercase mb-1 tracking-wider">MANTENIMIENTO PREVENTIVO</h4>
+          <p class="text-[11px] text-white/70 leading-tight">Programas planificados para prevenir fallas y maximizar vida útil.</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-4 p-6">
+        <div class="w-12 h-12 border border-signal-red rounded-full flex items-center justify-center flex-shrink-0 bg-signal-red/20 text-signal-red"><i class="fas fa-cogs text-xl"></i></div>
+        <div>
+          <h4 class="text-xs font-bold uppercase mb-1 tracking-wider">MANTENIMIENTO CORRECTIVO</h4>
+          <p class="text-[11px] text-white/70 leading-tight">Diagnóstico y reparación rápida para restablecer la operación.</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-4 p-6">
+        <div class="w-12 h-12 border border-signal-red rounded-full flex items-center justify-center flex-shrink-0 bg-signal-red/20 text-signal-red"><i class="fas fa-wrench text-xl"></i></div>
+        <div>
+          <h4 class="text-xs font-bold uppercase mb-1 tracking-wider">REPARACIÓN DE EQUIPOS</h4>
+          <p class="text-[11px] text-white/70 leading-tight">Intervenciones mecánicas, eléctricas e hidráulicas.</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-4 p-6">
+        <div class="w-12 h-12 border border-signal-red rounded-full flex items-center justify-center flex-shrink-0 bg-signal-red/20 text-signal-red"><i class="fas fa-shield-alt text-xl"></i></div>
+        <div>
+          <h4 class="text-xs font-bold uppercase mb-1 tracking-wider">CALIDAD Y SEGURIDAD</h4>
+          <p class="text-[11px] text-white/70 leading-tight">Trabajamos bajo normas internacionales asegurando calidad.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 <!-- 4 Boxes -->
 <section class="py-12 bg-surface-container-lowest border-b border-outline-variant">

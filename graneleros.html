@@ -75,7 +75,7 @@ body { font-family: 'Inter', sans-serif; color: #181c20; }
 <main>
 
 <!-- Hero -->
-<section class="relative h-[380px] md:h-[450px] lg:h-[420px] flex items-center justify-start overflow-hidden">
+<section class="relative h-[380px] md:h-[450px] lg:h-[420px] flex items-center justify-start bg-primary overflow-hidden">
   <div class="absolute inset-0">
     <img alt="Graneleros y cerealeros fluviales" class="w-full h-full object-cover object-center" src="Granero.webp" fetchpriority="high" loading="eager"/>
     <div class="absolute inset-0 hero-overlay"></div>
@@ -83,11 +83,51 @@ body { font-family: 'Inter', sans-serif; color: #181c20; }
   <div class="absolute inset-0 z-10 flex items-center justify-center">
     <div class="text-center px-4">
       <p class="text-on-primary text-sm font-medium tracking-widest uppercase mb-3 opacity-75" data-en="Fleet We Serve">Flota que Atendemos</p>
-      <h1 class="text-on-primary text-4xl md:text-5xl font-bold mb-4" data-en="Bulk &amp; Grain Carriers">Graneleros y Cerealeros</h1>
+      <h1 class="text-on-primary text-5xl md:text-6xl font-bold mb-6 leading-none tracking-tight">
+      FLOTA<br/>
+      <span class="text-signal-red">GRANELEROS</span>
+    </h1>
       <p class="text-on-primary text-lg font-light opacity-80" data-en="Hold maintenance · Discharge systems · Permanent operability">Mantenimiento de bodegas · Sistemas de descarga · Operatividad permanente</p>
     </div>
   </div>
 </section>
+
+<!-- 4 Red Boxes (Strip) -->
+<section class="bg-primary text-white border-b-4 border-signal-red">
+  <div class="container mx-auto px-4">
+    <div class="grid grid-cols-1 md:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-white/10">
+      <div class="flex items-center gap-4 p-6">
+        <div class="w-12 h-12 border border-signal-red rounded-full flex items-center justify-center flex-shrink-0 bg-signal-red/20 text-signal-red"><i class="fas fa-ship text-xl"></i></div>
+        <div>
+          <h4 class="text-xs font-bold uppercase mb-1 tracking-wider">COBERTURA INTEGRAL</h4>
+          <p class="text-[11px] text-white/70 leading-tight">Atención completa para todos los sistemas de la embarcación.</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-4 p-6">
+        <div class="w-12 h-12 border border-signal-red rounded-full flex items-center justify-center flex-shrink-0 bg-signal-red/20 text-signal-red"><i class="fas fa-bolt text-xl"></i></div>
+        <div>
+          <h4 class="text-xs font-bold uppercase mb-1 tracking-wider">RESPUESTA A EMERGENCIAS</h4>
+          <p class="text-[11px] text-white/70 leading-tight">Acción inmediata ante fallas críticas en navegación o puerto.</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-4 p-6">
+        <div class="w-12 h-12 border border-signal-red rounded-full flex items-center justify-center flex-shrink-0 bg-signal-red/20 text-signal-red"><i class="fas fa-user-cog text-xl"></i></div>
+        <div>
+          <h4 class="text-xs font-bold uppercase mb-1 tracking-wider">TÉCNICOS ESPECIALIZADOS</h4>
+          <p class="text-[11px] text-white/70 leading-tight">Personal experto en sistemas mecánicos, hidráulicos y eléctricos.</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-4 p-6">
+        <div class="w-12 h-12 border border-signal-red rounded-full flex items-center justify-center flex-shrink-0 bg-signal-red/20 text-signal-red"><i class="fas fa-thumbs-up text-xl"></i></div>
+        <div>
+          <h4 class="text-xs font-bold uppercase mb-1 tracking-wider">GARANTÍA DE SERVICIO</h4>
+          <p class="text-[11px] text-white/70 leading-tight">Respaldo total en cada intervención técnica realizada.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 <!-- Intro -->
 <section class="py-16 bg-surface-container-lowest">
