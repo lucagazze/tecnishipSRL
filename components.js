@@ -27,7 +27,7 @@
       <a class="nav-link" href="/" data-en="Home">Inicio</a>
       <a class="nav-link" href="nosotros" data-en="About Us">Quiénes Somos</a>
       <a class="nav-link" href="servicios" data-en="Services">Servicios</a>
-      <a class="nav-link text-signal-red font-semibold" href="repuestos" data-en="Spare Parts">Repuestos</a>
+      <a class="nav-link" href="repuestos" data-en="Spare Parts">Repuestos</a>
       <div class="relative group">
         <button class="nav-link flex items-center" style="background:none;border:none;cursor:pointer"><span data-en="Fleet">Flota</span> <i class="fas fa-chevron-down ml-1 text-xs"></i></button>
         <div class="absolute left-0 mt-2 w-52 bg-surface-container-lowest border border-outline-variant rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
@@ -154,6 +154,31 @@
 </a>`;
 
   inject('site-navbar', navbar);
+
+  // Marcar página activa en rojo
+  setTimeout(function() {
+    var curPage = window.location.pathname.split('/').pop() || '';
+    if (curPage === 'index.html' || curPage === '') curPage = '/';
+    else curPage = curPage.replace('.html', '');
+
+    var navLinks = document.querySelectorAll('#site-navbar .nav-link');
+    navLinks.forEach(function(link) {
+      var href = link.getAttribute('href');
+      if (href === curPage || (curPage === '/' && href === 'index.html')) {
+        link.classList.add('text-signal-red', 'font-bold');
+        link.classList.add('border-b-2', 'border-signal-red', 'pb-1');
+      }
+    });
+
+    // Marcar en móvil también
+    var mobileLinks = document.querySelectorAll('#mobileDrawer nav > a');
+    mobileLinks.forEach(function(link) {
+      var href = link.getAttribute('href');
+      if (href === curPage || (curPage === '/' && href === 'index.html')) {
+        link.classList.add('text-signal-red', 'font-bold');
+      }
+    });
+  }, 50);
   inject('site-footer', footer);
 
   window.openMobileMenu = function () {
