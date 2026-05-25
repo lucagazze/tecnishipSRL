@@ -75,12 +75,12 @@ body { font-family: 'Inter', sans-serif; color: #181c20; }
 <main>
 
 <!-- Hero -->
-<section class="relative h-[350px] md:h-[420px] lg:h-[380px] flex items-center justify-center text-center overflow-hidden">
-  <div class="absolute inset-0 z-0">
-    <img alt="Mantenimiento naval" class="w-full h-full object-cover" src="mantenimiento.webp" fetchpriority="high" loading="eager"/>
-    <div class="absolute inset-0 hero-overlay"></div>
+<section class="relative h-[350px] md:h-[420px] lg:h-[380px] flex items-center justify-start bg-primary overflow-hidden">
+  <div class="absolute inset-0 z-0 w-full flex justify-end">
+    <div class="absolute inset-0 z-10 bg-gradient-to-r from-primary via-primary/80 to-transparent md:from-40% md:via-70%"></div>
+    <img alt="Mantenimiento naval" class="w-full md:w-2/3 h-full object-cover object-right" src="mantenimiento.webp" fetchpriority="high" loading="eager"/>
   </div>
-  <div class="relative z-10 container mx-auto px-4">
+  <div class="relative z-20 container mx-auto px-4">
     <p class="text-on-primary text-sm font-medium tracking-widest uppercase mb-3 opacity-75" data-en="Our Services">Nuestros Servicios</p>
     <h1 class="text-on-primary text-4xl md:text-5xl font-bold mb-4" data-en="Naval Maintenance">Mantenimiento Naval</h1>
     <p class="text-on-primary text-lg font-light opacity-80" data-en="Preventive &amp; corrective · 24/7 response · Specialized technicians">Preventivo y correctivo · Respuesta 24/7 · Técnicos especializados</p>
