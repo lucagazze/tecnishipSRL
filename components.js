@@ -14,10 +14,7 @@
   }
 
   var navbar = `<!-- TopBar -->
-<div class="bg-surface-container-low py-1 text-right px-4 text-xs text-on-surface-variant">
-  <span class="mr-3"><i class="fas fa-phone mr-1"></i> +54 9 341 555 1826</span>
-  <span class="hidden lg:inline"><i class="fas fa-map-marker-alt mr-1"></i> Alvear, Santa Fe, Argentina</span>
-</div>
+
 <header class="sticky top-0 z-50 bg-surface-container-lowest shadow-sm py-4">
   <div class="container mx-auto px-4 flex justify-between items-center">
     <a class="flex-shrink-0" href="/">
@@ -25,14 +22,16 @@
     </a>
     <nav class="hidden lg:flex items-center space-x-6">
       <a class="nav-link" href="/" data-en="Home">Inicio</a>
-      <a class="nav-link" href="nosotros" data-en="About Us">Quiénes Somos</a>
+      <a class="nav-link" href="nosotros" data-en="About Us">Nosotros</a>
       <a class="nav-link" href="servicios" data-en="Services">Servicios</a>
       <a class="nav-link" href="repuestos" data-en="Spare Parts">Repuestos</a>
       <a class="nav-link" href="calidad" data-en="Quality">Calidad</a>
       <a class="nav-link" href="contacto" data-en="Contact">Contacto</a>
     </nav>
     <div class="flex items-center gap-3">
-      <button onclick="switchLang()" class="lang-toggle flex items-center rounded-full overflow-hidden cursor-pointer select-none" style="border:1.5px solid #c2c7d0;background:#e5e8ee">
+      
+      <a class="btn-cotizar hidden lg:inline-flex" href="contacto"><i class="fas fa-file-alt mr-2 text-base"></i> <span data-en="QUOTE">COTIZACIÓN</span></a>
+        <button onclick="switchLang()" class="lang-toggle flex items-center rounded-full overflow-hidden cursor-pointer select-none" style="border:1.5px solid #c2c7d0;background:#e5e8ee">
         <span class="lang-pill-es flex items-center gap-1 px-2.5 py-1.5 text-[11px] font-bold" style="background:#002a4d;color:#fff;border-radius:50px">
           <img src="https://flagcdn.com/w20/es.png" width="15" style="display:inline;vertical-align:middle;border-radius:2px"> ES
         </span>
@@ -40,7 +39,6 @@
           <img src="https://flagcdn.com/w20/us.png" width="15" style="display:inline;vertical-align:middle;border-radius:2px"> EN
         </span>
       </button>
-      <a class="btn-cotizar hidden lg:inline-flex" href="contacto"><i class="fas fa-file-alt mr-2 text-base"></i> <span data-en="QUOTE">COTIZACIÓN</span></a>
       <button class="lg:hidden text-on-surface-variant hover:text-primary" onclick="openMobileMenu()">
         <i class="fas fa-bars text-2xl"></i>
       </button>
@@ -58,7 +56,7 @@
     </div>
     <nav class="flex-1 overflow-y-auto">
       <a href="/" onclick="closeMobileMenu()" class="flex justify-between items-center px-6 py-4 text-on-surface font-medium border-b border-outline-variant hover:text-primary transition-colors" data-en="Home">Inicio</a>
-      <a href="nosotros" onclick="closeMobileMenu()" class="flex justify-between items-center px-6 py-4 text-on-surface font-medium border-b border-outline-variant hover:text-primary transition-colors" data-en="About Us">Quiénes Somos</a>
+      <a href="nosotros" onclick="closeMobileMenu()" class="flex justify-between items-center px-6 py-4 text-on-surface font-medium border-b border-outline-variant hover:text-primary transition-colors" data-en="About Us">Nosotros</a>
       <a href="servicios" onclick="closeMobileMenu()" class="flex justify-between items-center px-6 py-4 text-on-surface font-medium border-b border-outline-variant hover:text-primary transition-colors" data-en="Services">Servicios</a>
       <a href="repuestos" onclick="closeMobileMenu()" class="flex justify-between items-center px-6 py-4 font-bold text-signal-red border-b border-outline-variant hover:text-red-800 transition-colors" data-en="Spare Parts">Repuestos</a>
       <a href="calidad" onclick="closeMobileMenu()" class="flex justify-between items-center px-6 py-4 text-on-surface font-medium border-b border-outline-variant hover:text-primary transition-colors" data-en="Quality">Calidad</a>
@@ -71,7 +69,7 @@
 </div>`;
 
   var footerLinks = [
-    { href: 'nosotros', label: '¿Quiénes Somos?',      en: 'About Us',          page: '' },
+    { href: 'nosotros', label: 'Nosotros',      en: 'About Us',          page: '' },
     { href: 'mantenimiento.html',  label: 'Mantenimiento Naval',   en: 'Naval Maintenance', page: 'mantenimiento' },
     { href: 'reparacion.html',     label: 'Reparación de Equipos', en: 'Equipment Repair',  page: 'reparacion' },
     { href: 'repuestos.html',      label: 'Venta de Repuestos',    en: 'Spare Parts',       page: 'repuestos' },
@@ -92,12 +90,12 @@
           <a href="/"><img src="logo.webp" alt="Tecniship SRL" style="height:52px;width:auto;object-fit:contain" /></a>
         </div>
         <p class="text-xs text-on-surface-variant leading-relaxed pr-4" data-en="Comprehensive maintenance, repair and spare parts service for tugboats, oil tankers and bulk carriers in Argentina.">Servicio integral de mantenimiento, reparación y venta de repuestos navales para barcos remolcadores, petroleros y cerealeros en Argentina.</p>
-        <p class="text-xs font-medium text-primary" data-en="Paraná and Paraguay Waterways — Argentina">Vías navegables del Paraná y Paraguay — Argentina</p>
+        
       </div>
       <div>
         <h4 class="font-bold text-on-surface text-sm mb-4" data-en="CONTACT">CONTACTO</h4>
         <ul class="space-y-3 text-xs text-on-surface-variant">
-          <li class="flex items-start"><i class="fas fa-chevron-down text-outline mt-1 mr-2 text-[10px]"></i><div><span class="block text-outline mb-1" data-en="PHONES">TELÉFONOS</span><span class="block">+54 9 341 555 1826 (técnico)<br/>+54 9 341 555 2503 (adm)<br/>+54 9 341 552 8124 (adm)</span></div></li>
+          <li class="flex items-start"><i class="fas fa-chevron-down text-outline mt-1 mr-2 text-[10px]"></i><div><span class="block text-outline mb-1" data-en="PHONES">TELÉFONOS</span><span class="block">+54 9 341 555 1826 (técnico)<br/>+54 9 341 555 2503 (administración)<br/>+54 9 341 552 8124 (administración)</span></div></li>
           <li class="flex items-start"><i class="fas fa-chevron-down text-outline mt-1 mr-2 text-[10px]"></i><div><span class="block text-outline mb-1" data-en="EMAIL">EMAIL</span><span class="block">Tecniship@yahoo.com.ar</span></div></li>
           <li class="flex items-start"><i class="fas fa-chevron-down text-outline mt-1 mr-2 text-[10px]"></i><div><span class="block text-outline mb-1" data-en="ADDRESS">DIRECCIÓN</span><span class="block">Ruta 9 Km. 280,5, S2126<br/>Alvear, Santa Fe, Argentina</span></div></li>
           <li class="flex items-start"><i class="fas fa-chevron-down text-outline mt-1 mr-2 text-[10px]"></i><div><span class="block text-outline mb-1" data-en="BUSINESS HOURS">HORARIOS</span><span class="block" data-en="Mon–Fri 07:00–18:00 · Sat 08:00–16:00">Lun–Vie 07:00–18:00 · Sáb 08:00–16:00</span></div></li>
@@ -116,7 +114,7 @@
   </div>
   <div class="border-t border-outline-variant py-4">
     <div class="container mx-auto px-4 flex justify-between items-center text-[10px] text-on-surface-variant">
-      <div><p>2026 - <strong>TECNISHIP SRL</strong></p><p data-en="Naval Maintenance Service · Argentina.">Servicio de Mantenimiento Naval · Argentina.</p></div>
+      <div><p>2011 - <strong>TECNISHIP SRL</strong></p><p data-en="Naval Maintenance Service · Argentina.">Servicio de Mantenimiento Naval · Argentina.</p></div>
       <a href="https://algoritmiadesarrollos.com.ar/" target="_blank" class="hover:opacity-70 transition-opacity text-on-surface" style="text-decoration:none" data-en="Designed by Algoritmia">Diseñado por Algoritmia</a>
     </div>
   </div>
