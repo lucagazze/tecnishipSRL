@@ -116,7 +116,7 @@
   </div>
   <div class="border-t border-outline-variant py-4">
     <div class="container mx-auto px-4 flex justify-between items-center text-[10px] text-on-surface-variant">
-      <div><p>2026 - <strong>MB NAVAL</strong></p><p data-en="Naval Maintenance Service · Argentina.">Servicio de Mantenimiento Naval · Argentina.</p></div>
+      <div><p>2026 - <strong>TECNISHIP SRL</strong></p><p data-en="Naval Maintenance Service · Argentina.">Servicio de Mantenimiento Naval · Argentina.</p></div>
       <a href="https://algoritmiadesarrollos.com.ar/" target="_blank" class="hover:opacity-70 transition-opacity text-on-surface" style="text-decoration:none" data-en="Designed by Algoritmia">Diseñado por Algoritmia</a>
     </div>
   </div>
