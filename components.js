@@ -28,14 +28,6 @@
       <a class="nav-link" href="nosotros" data-en="About Us">Quiénes Somos</a>
       <a class="nav-link" href="servicios" data-en="Services">Servicios</a>
       <a class="nav-link" href="repuestos" data-en="Spare Parts">Repuestos</a>
-      <div class="relative group">
-        <button class="nav-link flex items-center" style="background:none;border:none;cursor:pointer"><span data-en="Fleet">Flota</span> <i class="fas fa-chevron-down ml-1 text-xs"></i></button>
-        <div class="absolute left-0 mt-2 w-52 bg-surface-container-lowest border border-outline-variant rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
-          <a class="block px-4 py-2 text-sm text-on-surface hover:bg-surface-container-low" href="remolcadores" data-en="Tugboats">Remolcadores</a>
-          <a class="block px-4 py-2 text-sm text-on-surface hover:bg-surface-container-low" href="petroleros" data-en="Oil Tankers">Barcos Petroleros</a>
-          <a class="block px-4 py-2 text-sm text-on-surface hover:bg-surface-container-low" href="graneleros" data-en="Bulk Carriers">Graneleros / Cerealeros</a>
-        </div>
-      </div>
       <a class="nav-link" href="calidad" data-en="Quality">Calidad</a>
       <a class="nav-link" href="contacto" data-en="Contact">Contacto</a>
     </nav>
