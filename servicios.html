@@ -5,15 +5,15 @@
 <link rel="icon" type="image/jpeg" href="favicon.jpg"/>
 <link rel="shortcut icon" href="favicon.jpg"/>
 <link rel="apple-touch-icon" href="favicon.jpg"/>
-<link rel="preload" as="image" href="Repuestos.webp"/>
+<link rel="preload" as="image" href="Reparacion.webp"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Servicios Navales — Tecniship SRL | Repuestos, Mantenimiento y Reparación</title>
-<meta name="description" content="Tecniship SRL ofrece servicios integrales para la industria naval: repuestos navales con stock permanente, mantenimiento preventivo y correctivo, y reparación de equipos. Ríos Paraná y Paraguay."/>
+<title>Servicios Navales — Tecniship SRL | Mantenimiento y Reparación</title>
+<meta name="description" content="Tecniship SRL ofrece servicios integrales de mantenimiento preventivo y correctivo, y reparación de equipos para la industria naval."/>
 <meta name="robots" content="index, follow"/>
 <meta name="geo.region" content="AR"/>
 <link rel="canonical" href="https://mbnaval.com.ar/servicios.html"/>
 <meta property="og:title" content="Servicios Navales — Tecniship SRL"/>
-<meta property="og:description" content="Repuestos navales, mantenimiento y reparación de equipos para flotas fluviales en Argentina."/>
+<meta property="og:description" content="Mantenimiento y reparación de equipos para flotas fluviales en Argentina."/>
 <meta property="og:url" content="https://mbnaval.com.ar/servicios.html"/>
 <meta property="og:locale" content="es_AR"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
@@ -51,11 +51,9 @@ body { font-family: 'Inter', sans-serif; color: #181c20; }
 .btn-cotizar:hover { background: #8b0a1e; }
 .btn-outline { border: 1.5px solid #002a4d; color: #002a4d; background: transparent; padding: 11px 36px; border-radius: 50px; font-size: 14px; font-weight: 500; display: inline-flex; align-items: center; text-decoration: none; transition: all .2s; }
 .btn-outline:hover { background: #002a4d; color: #fff; }
-.hero-overlay { background: linear-gradient(to right, rgba(0,42,77,1.0) 0%, rgba(0,42,77,0.50) 100%); }
+.hero-overlay { background: linear-gradient(to right, rgba(0,25,50,0.8) 0%, rgba(0,42,77,0.3) 100%); }
 </style>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
-<meta property="og:image" content="https://tecniship-srl.vercel.app/favicon.jpg"/>
-<meta property="og:image:alt" content="Tecniship SRL — Servicios Navales Argentina"/>
 </head>
 <body class="bg-surface">
 
@@ -73,109 +71,160 @@ body { font-family: 'Inter', sans-serif; color: #181c20; }
 <main>
 
 <!-- Hero -->
-<section class="relative h-[350px] md:h-[420px] lg:h-[380px] flex items-center justify-center text-center overflow-hidden">
+<section class="relative h-[380px] md:h-[450px] lg:h-[420px] flex items-center justify-start overflow-hidden">
   <div class="absolute inset-0 z-0">
-    <img src="Repuestos.webp" alt="Servicios Navales Tecniship SRL" class="w-full h-full object-cover object-center" fetchpriority="high" loading="eager"/>
+    <img src="Reparacion.webp" alt="Servicios Navales Tecniship SRL" class="w-full h-full object-cover object-top" fetchpriority="high" loading="eager"/>
     <div class="absolute inset-0 hero-overlay"></div>
   </div>
-  <div class="relative z-10 container mx-auto px-4">
-    <p class="text-on-primary text-sm font-medium tracking-widest uppercase mb-3 opacity-75" data-en="Tecniship SRL">Tecniship SRL</p>
-    <h1 class="text-on-primary text-4xl md:text-5xl font-bold mb-4" data-en="Our Services">Nuestros Servicios</h1>
-    <p class="text-on-primary text-lg font-light opacity-80" data-en="Spare parts · Maintenance · Repair · 24/7">Repuestos · Mantenimiento · Reparación · 24/7</p>
-  </div>
-  <!-- Wave Divider -->
-  <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none z-[3]">
-    <svg class="relative block w-full h-[40px] md:h-[60px] lg:h-[80px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 80 1440 120" preserveAspectRatio="none">
-      <path fill="#ffffff" d="M0,80 C400,80 1000,200 1440,160 L1440,200 L0,200 Z"></path>
-    </svg>
+  <div class="relative z-10 container mx-auto px-4 md:px-8 max-w-6xl">
+    <p class="text-signal-red text-xs font-bold tracking-widest uppercase mb-3" data-en="SERVICES">SERVICIOS</p>
+    <h1 class="text-white text-4xl md:text-5xl font-bold mb-4 max-w-2xl leading-tight" data-en="Naval maintenance and equipment repair">Mantenimiento naval <br/>y reparación de equipos</h1>
+    <p class="text-on-primary text-base font-light opacity-90 max-w-xl leading-relaxed" data-en="Comprehensive technical solutions to guarantee the operational continuity, safety and reliability of your fleet.">Soluciones técnicas integrales para garantizar la continuidad operativa, seguridad y confiabilidad de tu flota.</p>
   </div>
 </section>
 
-<!-- Servicio destacado: Repuestos -->
-<section class="py-16 bg-surface-container-lowest">
-  <div class="container mx-auto px-4 max-w-5xl">
-    <div class="mb-10">
-      <span class="inline-block bg-signal-red text-white text-[10px] font-bold tracking-widest uppercase px-3 py-1.5 rounded mb-4" data-en="FEATURED SERVICE">SERVICIO PRINCIPAL</span>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+<!-- 4 Boxes -->
+<section class="py-12 bg-surface-container-lowest border-b border-outline-variant">
+  <div class="container mx-auto px-4 max-w-6xl">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="bg-white rounded-xl p-6 border border-surface-container-high shadow-sm hover:shadow-md transition-shadow flex items-start gap-4">
+        <i class="fas fa-tools text-3xl text-primary mt-1"></i>
         <div>
-          <h2 class="text-3xl font-bold text-primary mb-5" data-en="Naval Spare Parts">Repuestos Navales</h2>
-          <p class="text-on-surface mb-4 leading-relaxed">
-            Nuestro servicio más importante. Mantenemos <strong>stock permanente</strong> de los principales repuestos navales para minimizar los tiempos de inactividad de tu flota. Trabajamos con piezas originales y equivalentes de primeras marcas.
-          </p>
-          <p class="text-on-surface mb-6 leading-relaxed">
-            Red internacional de proveedores que nos permite gestionar importaciones con plazos y costos claros desde el inicio.
-          </p>
-          <div class="flex flex-wrap gap-3">
-            <a href="repuestos" class="btn-cotizar"><i class="fas fa-box-open mr-2"></i> <span data-en="See spare parts">Ver repuestos</span></a>
-            <a href="contacto" class="btn-outline text-sm px-6 py-2.5" data-en="Check stock">Consultar stock</a>
-          </div>
+          <h3 class="text-xs font-bold text-primary uppercase mb-2 leading-tight">MANTENIMIENTO<br/>PREVENTIVO</h3>
+          <p class="text-[11px] text-on-surface-variant leading-relaxed">Programas planificados para prevenir fallas y maximizar la vida útil de los equipos.</p>
         </div>
-        <div class="grid grid-cols-2 gap-4">
-          <div class="flex flex-col items-center bg-surface-container-low rounded-xl p-5 text-center">
-            <i class="fas fa-boxes text-3xl text-primary mb-3 opacity-70"></i>
-            <h3 class="text-xs font-bold text-on-surface uppercase leading-tight">STOCK<br/>PERMANENTE</h3>
-          </div>
-          <div class="flex flex-col items-center bg-surface-container-low rounded-xl p-5 text-center">
-            <i class="fas fa-shipping-fast text-3xl text-primary mb-3 opacity-70"></i>
-            <h3 class="text-xs font-bold text-on-surface uppercase leading-tight">ENTREGA<br/>INMEDIATA</h3>
-          </div>
-          <div class="flex flex-col items-center bg-surface-container-low rounded-xl p-5 text-center">
-            <i class="fas fa-shield-alt text-3xl text-primary mb-3 opacity-70"></i>
-            <h3 class="text-xs font-bold text-on-surface uppercase leading-tight">CALIDAD<br/>GARANTIZADA</h3>
-          </div>
-          <div class="flex flex-col items-center bg-surface-container-low rounded-xl p-5 text-center">
-            <i class="fas fa-globe text-3xl text-primary mb-3 opacity-70"></i>
-            <h3 class="text-xs font-bold text-on-surface uppercase leading-tight" data-en="IMPORT ON REQUEST">IMPORTACIÓN<br/>BAJO PEDIDO</h3>
-          </div>
+      </div>
+      <div class="bg-white rounded-xl p-6 border border-surface-container-high shadow-sm hover:shadow-md transition-shadow flex items-start gap-4">
+        <i class="fas fa-cogs text-3xl text-primary mt-1"></i>
+        <div>
+          <h3 class="text-xs font-bold text-primary uppercase mb-2 leading-tight">MANTENIMIENTO<br/>CORRECTIVO</h3>
+          <p class="text-[11px] text-on-surface-variant leading-relaxed">Diagnóstico y reparación rápida para restablecer la operación en el menor tiempo posible.</p>
+        </div>
+      </div>
+      <div class="bg-white rounded-xl p-6 border border-surface-container-high shadow-sm hover:shadow-md transition-shadow flex items-start gap-4">
+        <i class="fas fa-wrench text-3xl text-primary mt-1"></i>
+        <div>
+          <h3 class="text-xs font-bold text-primary uppercase mb-2 leading-tight">REPARACIÓN<br/>DE EQUIPOS</h3>
+          <p class="text-[11px] text-on-surface-variant leading-relaxed">Intervenciones mecánicas, eléctricas, hidráulicas y electrónicas con personal especializado.</p>
+        </div>
+      </div>
+      <div class="bg-white rounded-xl p-6 border border-surface-container-high shadow-sm hover:shadow-md transition-shadow flex items-start gap-4">
+        <i class="fas fa-shield-alt text-3xl text-primary mt-1"></i>
+        <div>
+          <h3 class="text-xs font-bold text-primary uppercase mb-2 leading-tight">CALIDAD<br/>Y SEGURIDAD</h3>
+          <p class="text-[11px] text-on-surface-variant leading-relaxed">Trabajamos bajo normas internacionales asegurando calidad, seguridad y trazabilidad.</p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Otros servicios -->
-<section class="py-16 bg-surface-container">
-  <div class="container mx-auto px-4 max-w-5xl">
-    <h2 class="text-2xl font-bold text-primary mb-3 text-center" data-en="Complete technical services">Servicios técnicos completos</h2>
-    <p class="text-on-surface-variant text-center mb-12 max-w-xl mx-auto">Además del suministro de repuestos, brindamos soporte técnico integral para mantener tu flota operativa.</p>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Nuestro Proceso, Equipos, Industrias -->
+<section class="py-16 bg-surface-container-lowest">
+  <div class="container mx-auto px-4 max-w-6xl">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+      <!-- NUESTRO PROCESO -->
+      <div>
+        <h3 class="text-xs font-bold text-primary uppercase mb-6 tracking-widest border-b-2 border-signal-red inline-block pb-1">NUESTRO PROCESO</h3>
+        <ul class="space-y-6 relative border-l-2 border-surface-container-highest ml-3 mt-4">
+          <li class="pl-6 relative">
+            <div class="w-6 h-6 rounded-full bg-primary text-white flex items-center justify-center absolute -left-[13px] top-0 text-[10px] font-bold">1</div>
+            <h4 class="text-xs font-bold text-on-surface uppercase mb-1">1. DIAGNÓSTICO</h4>
+            <p class="text-[11px] text-on-surface-variant leading-relaxed">Evaluamos el equipo para identificar la causa raíz.</p>
+          </li>
+          <li class="pl-6 relative">
+            <div class="w-6 h-6 rounded-full bg-primary text-white flex items-center justify-center absolute -left-[13px] top-0 text-[10px] font-bold">2</div>
+            <h4 class="text-xs font-bold text-on-surface uppercase mb-1">2. PLAN DE TRABAJO</h4>
+            <p class="text-[11px] text-on-surface-variant leading-relaxed">Definimos el alcance, tiempos y recursos necesarios.</p>
+          </li>
+          <li class="pl-6 relative">
+            <div class="w-6 h-6 rounded-full bg-primary text-white flex items-center justify-center absolute -left-[13px] top-0 text-[10px] font-bold">3</div>
+            <h4 class="text-xs font-bold text-on-surface uppercase mb-1">3. EJECUCIÓN</h4>
+            <p class="text-[11px] text-on-surface-variant leading-relaxed">Realizamos el mantenimiento o reparación con personal calificado.</p>
+          </li>
+          <li class="pl-6 relative">
+            <div class="w-6 h-6 rounded-full bg-primary text-white flex items-center justify-center absolute -left-[13px] top-0 text-[10px] font-bold">4</div>
+            <h4 class="text-xs font-bold text-on-surface uppercase mb-1">4. PRUEBAS Y CONTROL</h4>
+            <p class="text-[11px] text-on-surface-variant leading-relaxed">Verificamos el funcionamiento y estándares de calidad.</p>
+          </li>
+          <li class="pl-6 relative">
+            <div class="w-6 h-6 rounded-full bg-primary text-white flex items-center justify-center absolute -left-[13px] top-0 text-[10px] font-bold">5</div>
+            <h4 class="text-xs font-bold text-on-surface uppercase mb-1">5. ENTREGA</h4>
+            <p class="text-[11px] text-on-surface-variant leading-relaxed">Entregamos el equipo operativo y con documentación.</p>
+          </li>
+        </ul>
+      </div>
 
-      <!-- Mantenimiento -->
-      <a href="mantenimiento" class="group bg-surface-container-lowest rounded-xl overflow-hidden border border-outline-variant hover:shadow-md hover:-translate-y-1 transition-all duration-300 flex flex-col">
-        <div class="relative h-48 overflow-hidden">
-          <img src="mantenimiento.webp" alt="Mantenimiento Naval" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/ fetchpriority="high" loading="eager">
-          <div class="absolute inset-0 hero-overlay"></div>
-          <div class="absolute bottom-4 left-4">
-            <span class="bg-primary text-white text-[10px] font-bold tracking-widest uppercase px-3 py-1 rounded">MANTENIMIENTO</span>
+      <!-- ¿QUÉ EQUIPOS INTERVENIMOS? -->
+      <div>
+        <h3 class="text-xs font-bold text-primary uppercase mb-6 tracking-widest border-b-2 border-signal-red inline-block pb-1 text-center w-full max-w-max mx-auto block">¿QUÉ EQUIPOS INTERVENIMOS?</h3>
+        <div class="grid grid-cols-2 gap-x-4 gap-y-8 text-center mt-4">
+          <div class="flex flex-col items-center">
+            <i class="fas fa-microchip text-3xl text-on-surface mb-3 opacity-80"></i>
+            <span class="text-[10px] font-bold uppercase text-on-surface">MOTORES</span>
+          </div>
+          <div class="flex flex-col items-center">
+            <i class="fas fa-tint text-3xl text-on-surface mb-3 opacity-80"></i>
+            <span class="text-[10px] font-bold uppercase text-on-surface">SISTEMAS HIDRÁULICOS</span>
+          </div>
+          <div class="flex flex-col items-center">
+            <i class="fas fa-bolt text-3xl text-on-surface mb-3 opacity-80"></i>
+            <span class="text-[10px] font-bold uppercase text-on-surface">SISTEMAS ELÉCTRICOS</span>
+          </div>
+          <div class="flex flex-col items-center">
+            <i class="fas fa-battery-full text-3xl text-on-surface mb-3 opacity-80"></i>
+            <span class="text-[10px] font-bold uppercase text-on-surface">GENERADORES</span>
+          </div>
+          <div class="flex flex-col items-center">
+            <i class="fas fa-water text-3xl text-on-surface mb-3 opacity-80"></i>
+            <span class="text-[10px] font-bold uppercase text-on-surface">BOMBAS</span>
+          </div>
+          <div class="flex flex-col items-center">
+            <i class="fas fa-fan text-3xl text-on-surface mb-3 opacity-80"></i>
+            <span class="text-[10px] font-bold uppercase text-on-surface">COMPRESORES</span>
+          </div>
+          <div class="flex flex-col items-center">
+            <i class="fas fa-cogs text-3xl text-on-surface mb-3 opacity-80"></i>
+            <span class="text-[10px] font-bold uppercase text-on-surface">CAJAS REDUCTORAS</span>
+          </div>
+          <div class="flex flex-col items-center">
+            <i class="fas fa-dharmachakra text-3xl text-on-surface mb-3 opacity-80"></i>
+            <span class="text-[10px] font-bold uppercase text-on-surface">SISTEMAS DE GOBIERNO</span>
+          </div>
+          <div class="flex flex-col items-center col-span-2">
+            <i class="fas fa-server text-3xl text-on-surface mb-3 opacity-80"></i>
+            <span class="text-[10px] font-bold uppercase text-on-surface">TABLEROS Y CONTROL</span>
           </div>
         </div>
-        <div class="p-6 flex flex-col flex-grow">
-          <h3 class="text-lg font-bold text-primary mb-3" data-en="Preventive & Corrective Maintenance" data-en="Preventive &amp; Corrective Maintenance">Mantenimiento Preventivo y Correctivo</h3>
-          <p class="text-on-surface-variant text-sm leading-relaxed mb-4 flex-grow">Programas de mantenimiento a medida según tipo de embarcación, horas de operación y condiciones de navegación. Respuesta 24/7 para emergencias.</p>
-          <div class="flex items-center gap-2 text-primary text-sm font-semibold group-hover:gap-3 transition-all">
-            <span data-en="More info">Ver más</span> <i class="fas fa-arrow-right text-xs"></i>
-          </div>
-        </div>
-      </a>
+        <p class="text-signal-red text-[10px] font-bold uppercase text-center mt-6">Y MÁS EQUIPOS A BORDO</p>
+      </div>
 
-      <!-- Reparación -->
-      <a href="reparacion" class="group bg-surface-container-lowest rounded-xl overflow-hidden border border-outline-variant hover:shadow-md hover:-translate-y-1 transition-all duration-300 flex flex-col">
-        <div class="relative h-48 overflow-hidden">
-          <img src="Reparacion.webp" alt="Reparación Naval" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/ fetchpriority="high" loading="eager">
-          <div class="absolute inset-0 hero-overlay"></div>
-          <div class="absolute bottom-4 left-4">
-            <span class="bg-primary text-white text-[10px] font-bold tracking-widest uppercase px-3 py-1 rounded">REPARACIÓN</span>
-          </div>
+      <!-- INDUSTRIAS QUE ATENDEMOS -->
+      <div>
+        <h3 class="text-xs font-bold text-primary uppercase mb-6 tracking-widest border-b-2 border-signal-red inline-block pb-1">INDUSTRIAS QUE ATENDEMOS</h3>
+        <div class="space-y-6 mt-4">
+           <!-- Card Flota Fluvial -->
+           <div class="flex gap-4 items-center">
+             <div class="w-24 h-16 rounded overflow-hidden flex-shrink-0">
+               <img src="Remolcador.webp" class="w-full h-full object-cover" alt="Flota Fluvial">
+             </div>
+             <div>
+               <h4 class="text-xs font-bold text-on-surface uppercase mb-1">FLOTA FLUVIAL</h4>
+               <p class="text-[11px] text-on-surface-variant leading-relaxed">Remolcadores, empujadores, barcazas y buques de trabajo.</p>
+             </div>
+           </div>
+           <!-- Card Flota Maritima -->
+           <div class="flex gap-4 items-center">
+             <div class="w-24 h-16 rounded overflow-hidden flex-shrink-0">
+               <img src="Petrolero.webp" class="w-full h-full object-cover" alt="Flota Marítima">
+             </div>
+             <div>
+               <h4 class="text-xs font-bold text-on-surface uppercase mb-1">FLOTA MARÍTIMA</h4>
+               <p class="text-[11px] text-on-surface-variant leading-relaxed">Buques de carga, pesqueros, offshore y embarcaciones especiales.</p>
+             </div>
+           </div>
         </div>
-        <div class="p-6 flex flex-col flex-grow">
-          <h3 class="text-lg font-bold text-primary mb-3" data-en="Equipment & Systems Repair" data-en="Equipment &amp; Systems Repair">Reparación de Equipos y Sistemas</h3>
-          <p class="text-on-surface-variant text-sm leading-relaxed mb-4 flex-grow">Diagnóstico y reparación de cualquier falla: motores, sistemas hidráulicos, eléctricos y de propulsión. Técnicos especializados disponibles en puerto o a bordo.</p>
-          <div class="flex items-center gap-2 text-primary text-sm font-semibold group-hover:gap-3 transition-all">
-            <span data-en="More info">Ver más</span> <i class="fas fa-arrow-right text-xs"></i>
-          </div>
-        </div>
-      </a>
-
+      </div>
     </div>
   </div>
 </section>
@@ -188,28 +237,28 @@ body { font-family: 'Inter', sans-serif; color: #181c20; }
         <i class="fas fa-ship text-3xl opacity-90 w-9 text-center"></i>
         <div class="text-left">
           <div class="text-base font-bold leading-none mb-1">+15</div>
-          <div class="text-[10px] uppercase tracking-widest font-semibold opacity-80" data-en="YEARS OF EXPERIENCE">AÑOS DE EXPERIENCIA</div>
+          <div class="text-[10px] uppercase tracking-widest font-semibold opacity-80" data-en="YEARS OF EXPERIENCE">AÑOS DE EXPERIENCIA EN EL SECTOR NAVAL</div>
         </div>
       </div>
       <div class="flex items-center gap-3">
-        <i class="fas fa-anchor text-3xl opacity-90 w-9 text-center"></i>
+        <i class="fas fa-anchor text-3xl opacity-90 text-signal-red w-9 text-center"></i>
         <div class="text-left">
           <div class="text-base font-bold leading-none mb-1">+200</div>
-          <div class="text-[10px] uppercase tracking-widest font-semibold opacity-80" data-en="VESSELS SERVED">EMBARCACIONES ATENDIDAS</div>
+          <div class="text-[10px] uppercase tracking-widest font-semibold opacity-80" data-en="EQUIPMENT SUCCESSFULLY INTERVENED">EQUIPOS INTERVENIDOS EXITOSAMENTE</div>
         </div>
       </div>
       <div class="flex items-center gap-3">
-        <i class="fas fa-check-circle text-3xl opacity-90 text-signal-red w-9 text-center"></i>
+        <i class="fas fa-clock text-3xl opacity-90 text-signal-red w-9 text-center"></i>
         <div class="text-left">
-          <div class="text-base font-bold leading-none mb-1">SERVICIOS</div>
-          <div class="text-[10px] uppercase tracking-widest font-semibold opacity-80" data-en="RELIABLE">CONFIABLES</div>
+          <div class="text-base font-bold leading-none mb-1">24/7</div>
+          <div class="text-[10px] uppercase tracking-widest font-semibold opacity-80" data-en="TECHNICAL ASSISTANCE">ASISTENCIA TÉCNICA CUANDO MÁS LO NECESITÁS</div>
         </div>
       </div>
       <div class="flex items-center gap-3">
-        <i class="fas fa-globe-americas text-3xl opacity-90 text-signal-red w-9 text-center"></i>
+        <i class="fas fa-shield-alt text-3xl opacity-90 text-signal-red w-9 text-center"></i>
         <div class="text-left">
-          <div class="text-base font-bold leading-none mb-1">COBERTURA</div>
-          <div class="text-[10px] uppercase tracking-widest font-semibold opacity-80" data-en="NATIONAL &amp; INTERNATIONAL">NACIONAL E INTERNACIONAL</div>
+          <div class="text-base font-bold leading-none mb-1">100%</div>
+          <div class="text-[10px] uppercase tracking-widest font-semibold opacity-80" data-en="COMMITMENT TO QUALITY AND SAFETY">COMPROMISO CON LA CALIDAD Y LA SEGURIDAD</div>
         </div>
       </div>
     </div>
