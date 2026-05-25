@@ -58,7 +58,7 @@
       <a href="/" onclick="closeMobileMenu()" class="flex justify-between items-center px-6 py-4 text-on-surface font-medium border-b border-outline-variant hover:text-primary transition-colors" data-en="Home">Inicio</a>
       <a href="nosotros" onclick="closeMobileMenu()" class="flex justify-between items-center px-6 py-4 text-on-surface font-medium border-b border-outline-variant hover:text-primary transition-colors" data-en="About Us">Nosotros</a>
       <a href="servicios" onclick="closeMobileMenu()" class="flex justify-between items-center px-6 py-4 text-on-surface font-medium border-b border-outline-variant hover:text-primary transition-colors" data-en="Services">Servicios</a>
-      <a href="repuestos" onclick="closeMobileMenu()" class="flex justify-between items-center px-6 py-4 font-bold text-signal-red border-b border-outline-variant hover:text-red-800 transition-colors" data-en="Spare Parts">Repuestos</a>
+      <a href="repuestos" onclick="closeMobileMenu()" class="flex justify-between items-center px-6 py-4 text-on-surface font-medium border-b border-outline-variant hover:text-primary transition-colors" data-en="Spare Parts">Repuestos</a>
       <a href="calidad" onclick="closeMobileMenu()" class="flex justify-between items-center px-6 py-4 text-on-surface font-medium border-b border-outline-variant hover:text-primary transition-colors" data-en="Quality">Calidad</a>
       <a href="contacto" onclick="closeMobileMenu()" class="flex justify-between items-center px-6 py-4 text-on-surface font-medium border-b border-outline-variant hover:text-primary transition-colors" data-en="Contact">Contacto</a>
       <div class="px-6 py-4 border-b border-outline-variant">
